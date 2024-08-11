@@ -1,10 +1,19 @@
 import React from "react";
-import { useState } from "react";
+import Dark from "../assets/icons/BxsMoon.svg";
+import Light from "../assets/icons/BxsSun.svg";
 
-function Settings() {
+function Settings({ darkModeHandler, darkMode }) {
     return (
         <div>
-            <h1 className="text-5xl">Settings</h1>
+            <div className="flex justify-between items-center z-10">
+                <button onClick={darkModeHandler}>
+                    {!darkMode ? (
+                        <img src={Dark} alt="Dark Mode" className="w-8 h-8" />
+                    ) : (
+                        <img src={Light} alt="Light Mode" className="w-8 h-8" />
+                    )}
+                </button>
+            </div>
         </div>
     );
 }
