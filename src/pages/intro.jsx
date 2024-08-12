@@ -40,6 +40,7 @@ function Intro() {
     intro.classList.add('transition-up');
     setTimeout(() => {
       intro.classList.add('hidden');
+      intro.classList.add('opacity-0');
     }, 400);
     setTimeout(() => {
       arrowDown.classList.add('hidden');
@@ -48,12 +49,17 @@ function Intro() {
       document.getElementById('bgLight').classList.remove('opacity-40');
       document.getElementById('bgDark').classList.add('dark:opacity-0');
       document.getElementById('bgLight').classList.add('opacity-0');
+      document.getElementById('menu').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('menu').classList.remove('opacity-0');
+      }, 200);
       setTimeout(() => {
         document.getElementById('bgDark').classList.add('hidden');
         document.getElementById('bgLight').classList.add('hidden');
       }, 400);
       setTimeout(() => {
         document.getElementById('about').classList.remove('opacity-0');
+        intro.classList.remove('transition-up');
       }, 700);
     }, 700);
   }

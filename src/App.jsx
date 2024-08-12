@@ -3,6 +3,7 @@ import './index.css'
 import Intro from './pages/intro'
 import About from './pages/about'
 import Settings from './components/settings'
+import Menu from './components/menu'
 import BackgroundLight from './assets/media/bgLight.svg'
 import BackgroundDark from './assets/media/bgDark.svg'
 
@@ -136,6 +137,9 @@ function App() {
       <div className='absolute dark:opacity-100 opacity-5 bg-black h-full w-full z-0'></div>
       <div id='bgDark' className='bg-animation absolute h-500 w-500 z-0 dark:opacity-5 opacity-0'>
         <img src={BackgroundDark} alt='Background' className='h-500 w-500 object-cover'/>
+      </div>
+      <div id='menu' className='fixed top-0 left-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-50'>
+        <Menu darkMode={darkMode}/>
       </div>
       <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 lg:hidden lg:opacity-0 transition duration-500 z-50'>
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
