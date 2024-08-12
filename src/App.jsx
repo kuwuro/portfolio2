@@ -72,8 +72,9 @@ function App() {
 
   window.addEventListener('load', () => {
     document.body.classList.add('pointernone');
-    document.getElementById('intro').classList.remove('hidden');
+    document.getElementById('intro').classList.remove('lg:hidden');
     setTimeout(() => {
+      document.getElementById('intro').classList.remove('lg:opacity-0');
       document.getElementById('intro').classList.add('opacity-100');
     }, 800);    
     setTimeout(() => {
@@ -82,7 +83,8 @@ function App() {
         createClickRipple(window.innerWidth / 1.7, window.innerHeight / 2.5, false);
       }, 200);
       setTimeout(() => {        
-        setTimeout(() => {          
+        setTimeout(() => {      
+          document.getElementById('webDev').classList.remove('lg:opacity-0');    
           document.getElementById('webDev').classList.add('opacity-100');
         }, 500);
       }, 500);  
@@ -95,9 +97,11 @@ function App() {
       document.querySelectorAll('#enricAr span').forEach((span, index) => {
         span.style.animation = `waviy 3.5s ease-in-out infinite ${index * 0.1}s`;
       });  
-      document.getElementById('arrowDown').classList.remove('hidden');
-      document.getElementById('settings').classList.remove('hidden');
+      document.getElementById('arrowDown').classList.remove('lg:hidden');
+      document.getElementById('settings').classList.remove('lg:hidden');
       setTimeout(() => {
+        document.getElementById('settings').classList.remove('lg:opacity-0');
+        document.getElementById('arrowDown').classList.remove('lg:opacity-0');
         document.getElementById('settings').classList.add('opacity-100');
         document.getElementById('arrowDown').classList.add('opacity-100');
       }, 500);
