@@ -7,9 +7,9 @@ import i18n from 'i18next';
 import { useState } from 'react';
 
 const lngs = {
-    en: { nativeName: "eng" },
-    es: { nativeName: "esp" },
-    ca: { nativeName: "cat" },
+    en: { nativeName: "ENG" },
+    es: { nativeName: "ESP" },
+    ca: { nativeName: "CAT" },
 };
 
 function Settings({ darkModeHandler, darkMode }) {
