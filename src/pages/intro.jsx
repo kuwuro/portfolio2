@@ -9,7 +9,6 @@ function Intro() {
 
   function scrollDown(event) {
     event.deltaY > 0 && transitionDown();
-    console.log('scroll down');
   }
   addEventListener('wheel', scrollDown);
 
@@ -41,7 +40,7 @@ function Intro() {
     intro.classList.add('transition-up');
     setTimeout(() => {
       intro.classList.add('hidden');
-    }, 500);
+    }, 400);
     setTimeout(() => {
       arrowDown.classList.add('hidden');
       document.getElementById('about').classList.remove('hidden');
@@ -52,11 +51,11 @@ function Intro() {
       setTimeout(() => {
         document.getElementById('bgDark').classList.add('hidden');
         document.getElementById('bgLight').classList.add('hidden');
-      }, 500);
+      }, 400);
       setTimeout(() => {
         document.getElementById('about').classList.remove('opacity-0');
-      }, 650);
-    }, 650);
+      }, 700);
+    }, 700);
   }
 
   return (
