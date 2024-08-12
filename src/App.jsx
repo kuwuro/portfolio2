@@ -7,20 +7,31 @@ function getRandomDelay(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+let rippleTimeout;
+
 function generateRandomRipple() {
-  const randomDelay = getRandomDelay(800, 1500);
-  setTimeout(() => {
+  if (document.visibilityState === 'visible') {
+    const randomDelay = getRandomDelay(800, 1500);
+    rippleTimeout = setTimeout(() => {
       const randomX = Math.random() * window.innerWidth;
       const randomY = Math.random() * window.innerHeight;
       createClickRipple(randomX, randomY, true);
 
-      const nextRandomDelay = getRandomDelay(400, 1000);
-      setTimeout(() => {
-        generateRandomRipple();
-      }, nextRandomDelay);
-  }, randomDelay);
+      const nextRandomDelay = getRandomDelay(800, 1200);
+      rippleTimeout = setTimeout(generateRandomRipple, nextRandomDelay);
+    }, randomDelay);
+  } else {
+    clearTimeout(rippleTimeout);
+  }
 }
 
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === 'visible') {
+    generateRandomRipple();
+  } else {
+    clearTimeout(rippleTimeout);
+  }
+});
 
 function createSmallRipple(x, y) {
   const smallRipple = document.createElement('div');

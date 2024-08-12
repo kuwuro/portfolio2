@@ -21,6 +21,8 @@ function Intro() {
   return (
     <div id="title">
       <h1 className="text-7xl font-poppins select-none tracking-widest dark:text-white">ENRIC ARMENGOL</h1>
+      <p className="text-2xl font-poppins select-none dark:text-white">Frontend Developer</p>
+      <p className="text-xl font-dmsans select-none dark:text-white">This is a sample text wawawawaa</p>
     </div>
   );
 }
