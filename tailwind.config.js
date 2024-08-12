@@ -13,6 +13,7 @@ export default {
     },
     colors: {
       "white": "#fafafa",
+      "black": "#222222",
     },
     extend: {},
   },

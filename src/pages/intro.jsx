@@ -1,28 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 
 function Intro() {
-  // const titleH1 = document.querySelector('#title h1');
-  // function updateTitle() {
-  //     const titleText = document.querySelector('#title h1').textContent;
-  //     const screenWidth = window.innerWidth;
+  const { t } = useTranslation();
+  const [titleHtml, setTitleHtml] = useState('');
 
-  //     if (screenWidth <= 600) {
-  //         const breakText = titleText.replace(/\s/g, '<br>');
-  //         titleH1.innerHTML = breakText;
-  //         titleH1.style.whiteSpace = 'normal';
-  //     } else {
-  //         const spannedText = titleText.split('').map((letter, index) => `<span style="--i:${index + 1}">${letter}</span>`).join('');
-  //         titleH1.innerHTML = spannedText;
-  //         titleH1.style.whiteSpace = 'pre';
-  //     }
-  // }
-  // updateTitle();
+  useEffect(() => {
+    const updateTitle = () => {
+      const titleText = 'ENRIC ARMENGOL';
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 600) {
+        const breakText = titleText.replace(/\s/g, '<br>');
+        setTitleHtml(breakText);
+      } else {
+        const spannedText = titleText.split('').map((letter, index) => 
+          `<span style="--i:${index + 1}">${letter}</span>`
+        ).join('');
+        setTitleHtml(spannedText);
+      }
+    };
+
+    updateTitle();
+    window.addEventListener('resize', updateTitle);
+    return () => window.removeEventListener('resize', updateTitle);
+  }, []);
 
   return (
-    <div id="title">
-      <h1 className="text-7xl font-poppins select-none tracking-widest dark:text-white">ENRIC ARMENGOL</h1>
-      <p className="text-2xl font-poppins select-none dark:text-white">Frontend Developer</p>
-      <p className="text-xl font-dmsans select-none dark:text-white">This is a sample text wawawawaa</p>
+    <div id="title" className="text-center flex flex-col gap-4">
+      <div className='flex flex-col gap-2'>
+        <h1 id='enricAr'
+          className="text-7xl font-poppins select-none tracking-widest dark:text-white"
+          style={{ whiteSpace: 'pre' }}
+          dangerouslySetInnerHTML={{ __html: titleHtml }}
+        />
+        <p className="text-2xl font-poppins select-none dark:text-white">WEB DESIGNER & DEVELOPER</p>
+      </div>
+      <p className="text-xl font-dmsans select-none dark:text-white">
+        <Trans i18nKey="intro" />
+      </p>
     </div>
   );
 }

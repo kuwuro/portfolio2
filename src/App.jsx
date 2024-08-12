@@ -11,7 +11,7 @@ let rippleTimeout;
 
 function generateRandomRipple() {
   if (document.visibilityState === 'visible') {
-    const randomDelay = getRandomDelay(800, 1500);
+    const randomDelay = getRandomDelay(100, 1000);
     rippleTimeout = setTimeout(() => {
       const randomX = Math.random() * window.innerWidth;
       const randomY = Math.random() * window.innerHeight;
@@ -67,10 +67,32 @@ function App() {
 
   window.addEventListener('load', () => {
     document.body.classList.add('pointernone');
-    generateRandomRipple();
-    body.addEventListener('click', function (e) {
-      createClickRipple(e.clientX, e.clientY, false);
-    });
+    document.getElementById('intro').classList.remove('hidden');
+    setTimeout(() => {
+      document.getElementById('intro').classList.add('opacity-100');
+    }, 800);
+    setTimeout(() => {
+      createClickRipple(window.innerWidth / 2, window.innerHeight / 2, false);
+      setTimeout(() => {
+        createClickRipple(window.innerWidth / 1.7, window.innerHeight / 2.5, false);
+      }, 200);
+      setTimeout(() => {
+        document.getElementById('settings').classList.remove('hidden');
+        setTimeout(() => {
+          document.getElementById('settings').classList.add('opacity-100');
+        }, 500);
+      }, 500);  
+    }, 1500);
+    setTimeout(() => {
+      generateRandomRipple();
+      body.addEventListener('click', function (e) {
+        createClickRipple(e.clientX, e.clientY, false);
+      });     
+      document.querySelectorAll('#enricAr span').forEach((span, index) => {
+        span.style.animation = `waviy 3.5s ease-in-out infinite ${index * 0.1}s`;
+      });  
+    }, 3300);  
+      
     body.addEventListener('mousemove', (e) => {
       const currentTime = new Date().getTime();
       if (currentTime - lastRippleTime > 50) {
@@ -95,11 +117,11 @@ function App() {
   return (
     <div className='background-layer flex items-center justify-center'>
       <div className='absolute dark:opacity-100 opacity-5 bg-black h-full w-full z-0'></div>
-      <div className='fixed top-0 right-0 lg:m-12 m-8 z-10'>
-        <Settings darkModeHandler={darkModeHandler} darkMode={darkMode} />
+      <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-10'>
+        <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
-      <div className='z-10'>
-        <Intro />
+      <div id="intro" className='hidden opacity-0 transition duration-500 z-10'>
+        <Intro/>
       </div>
       </div>
   );
