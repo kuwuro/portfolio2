@@ -66,7 +66,7 @@ function Intro() {
           style={{ whiteSpace: 'pre' }}
           dangerouslySetInnerHTML={{ __html: titleHtml }}
         />
-        <p id='webDev' className="lg:text-2xl text-xl font-poppins select-none dark:text-white lg:opacity-0 transition duration-500">WEB DESIGNER & DEVELOPER</p>
+        <p id='webDev' className="lg:text-2xl text-xl font-poppins select-none dark:text-white lg:opacity-0 transition lg:duration-500 duration-300">WEB DESIGNER & DEVELOPER</p>
       </div>
       {/* <p className="text-xl font-dmsans select-none dark:text-white">
         <Trans i18nKey="intro" />
