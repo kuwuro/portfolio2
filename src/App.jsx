@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './index.css'
 import Intro from './pages/intro'
+import About from './pages/about'
 import Settings from './components/settings'
+import BackgroundLight from './assets/media/bgLight.svg'
+import BackgroundDark from './assets/media/bgDark.svg'
 
 function getRandomDelay(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -10,7 +13,9 @@ function getRandomDelay(min, max) {
 let rippleTimeout;
 
 function generateRandomRipple() {
-  if (document.visibilityState === 'visible') {
+  if (document.getElementById('intro').classList.contains('hidden')) {
+    return;
+  } else if (document.visibilityState === 'visible') {
     const randomDelay = getRandomDelay(100, 1000);
     rippleTimeout = setTimeout(() => {
       const randomX = Math.random() * window.innerWidth;
@@ -70,16 +75,15 @@ function App() {
     document.getElementById('intro').classList.remove('hidden');
     setTimeout(() => {
       document.getElementById('intro').classList.add('opacity-100');
-    }, 800);
+    }, 800);    
     setTimeout(() => {
       createClickRipple(window.innerWidth / 2, window.innerHeight / 2, false);
       setTimeout(() => {
         createClickRipple(window.innerWidth / 1.7, window.innerHeight / 2.5, false);
       }, 200);
-      setTimeout(() => {
-        document.getElementById('settings').classList.remove('hidden');
-        setTimeout(() => {
-          document.getElementById('settings').classList.add('opacity-100');
+      setTimeout(() => {        
+        setTimeout(() => {          
+          document.getElementById('webDev').classList.add('opacity-100');
         }, 500);
       }, 500);  
     }, 1500);
@@ -91,6 +95,12 @@ function App() {
       document.querySelectorAll('#enricAr span').forEach((span, index) => {
         span.style.animation = `waviy 3.5s ease-in-out infinite ${index * 0.1}s`;
       });  
+      document.getElementById('arrowDown').classList.remove('hidden');
+      document.getElementById('settings').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('settings').classList.add('opacity-100');
+        document.getElementById('arrowDown').classList.add('opacity-100');
+      }, 500);
     }, 3300);  
       
     body.addEventListener('mousemove', (e) => {
@@ -115,15 +125,24 @@ function App() {
   };
 
   return (
-    <div className='background-layer flex items-center justify-center'>
+    <div className='background-layer flex items-center justify-center overflow-hidden'>
+      <div id='bgLight' className='bg-animation absolute h-500 w-500 z-0 opacity-40'>
+        <img src={BackgroundLight} alt='Background' className='h-500 w-500 object-cover'/>
+      </div>
       <div className='absolute dark:opacity-100 opacity-5 bg-black h-full w-full z-0'></div>
-      <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-10'>
+      <div id='bgDark' className='bg-animation absolute h-500 w-500 z-0 dark:opacity-5 opacity-0'>
+        <img src={BackgroundDark} alt='Background' className='h-500 w-500 object-cover'/>
+      </div>
+      <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-50'>
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
-      <div id="intro" className='hidden opacity-0 transition duration-500 z-10'>
+      <div id="intro" className='opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
         <Intro/>
       </div>
+      <div id="about" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
+        <About/>
       </div>
+    </div>
   );
 }
 

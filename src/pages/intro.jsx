@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
+import ArrowDownDark from '../assets/icons/ArrowDownDark.svg';
+import ArrowDownLight from '../assets/icons/ArrowDownLight.svg';
 
 function Intro() {
   const { t } = useTranslation();
   const [titleHtml, setTitleHtml] = useState('');
+
+  function scrollDown(event) {
+    event.deltaY > 0 && transitionDown();
+    console.log('scroll down');
+  }
+  addEventListener('wheel', scrollDown);
 
   useEffect(() => {
     const updateTitle = () => {
@@ -26,19 +34,51 @@ function Intro() {
     return () => window.removeEventListener('resize', updateTitle);
   }, []);
 
+  function transitionDown() {
+    removeEventListener('wheel', scrollDown);
+    const arrowDown = document.getElementById('arrowDown');
+    const intro = document.getElementById('intro');
+    intro.classList.add('transition-up');
+    setTimeout(() => {
+      intro.classList.add('hidden');
+    }, 500);
+    setTimeout(() => {
+      arrowDown.classList.add('hidden');
+      document.getElementById('about').classList.remove('hidden');
+      document.getElementById('bgDark').classList.remove('dark:opacity-5');
+      document.getElementById('bgLight').classList.remove('opacity-40');
+      document.getElementById('bgDark').classList.add('dark:opacity-0');
+      document.getElementById('bgLight').classList.add('opacity-0');
+      setTimeout(() => {
+        document.getElementById('bgDark').classList.add('hidden');
+        document.getElementById('bgLight').classList.add('hidden');
+      }, 500);
+      setTimeout(() => {
+        document.getElementById('about').classList.remove('opacity-0');
+      }, 650);
+    }, 650);
+  }
+
   return (
-    <div id="title" className="text-center flex flex-col gap-4">
+    <div id="title" className="text-center flex flex-col justify-center items-center gap-4">
       <div className='flex flex-col gap-2'>
         <h1 id='enricAr'
-          className="text-7xl font-poppins select-none tracking-widest dark:text-white"
+          className="lg:text-7xl text-5xl font-poppins select-none tracking-widest dark:text-white"
           style={{ whiteSpace: 'pre' }}
           dangerouslySetInnerHTML={{ __html: titleHtml }}
         />
-        <p className="text-2xl font-poppins select-none dark:text-white">WEB DESIGNER & DEVELOPER</p>
+        <p id='webDev' className="lg:text-2xl text-xl font-poppins select-none dark:text-white opacity-0 transition duration-500">WEB DESIGNER & DEVELOPER</p>
       </div>
-      <p className="text-xl font-dmsans select-none dark:text-white">
+      {/* <p className="text-xl font-dmsans select-none dark:text-white">
         <Trans i18nKey="intro" />
-      </p>
+      </p> */}
+      <div id='arrowDown' className='absolute bottom-20 opacity-0 flex flex-col justify-center items-center'>
+        <button className='focus:outline-none' onClick={transitionDown}>
+          <img src={ArrowDownLight} alt='Arrow Down' className='w-16 h-16 animate-bounce dark:hidden'/>
+          <img src={ArrowDownDark} alt='Arrow Down' className='w-16 h-16 animate-bounce hidden dark:block'/>
+        </button>
+        <p className='dark:text-white font-dmsans'>{t('introButton')}</p>
+      </div>
     </div>
   );
 }

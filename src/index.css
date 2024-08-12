@@ -27,7 +27,7 @@
   --bg1: #8e8eeb;
   --bg2: #e3ade9;
   --clickRipple: rgba(255, 255, 255, 0.637);
-  --text: rgb(22, 22, 22);
+  --text: #222222;
 }
 
 body {
@@ -58,6 +58,19 @@ body * {
 
 .bg-black{
   background-color: #222222;
+}
+
+.bg-animation{
+  animation: rotate 90s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes AnimationName {
@@ -159,5 +172,20 @@ body * {
   }
   50% {
       transform: translate3d(0, -8px, 0);
+  }
+}
+
+.transition-up {
+  animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
   }
 }

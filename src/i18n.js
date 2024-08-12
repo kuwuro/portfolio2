@@ -11,17 +11,23 @@ i18next
         resources: {
             en: {
                 translation: {
-                    intro: "English intro",
+                    intro: "English placeholder",
+                    introButton: "Scroll down or click the arrow",
+                    about: "About me",
                 }
             },
             es: {
                 translation: {
-                    intro: "Spanish intro",
+                    intro: "Spanish placeholder",
+                    introButton: "Haz scroll hacia abajo o haz click en la flecha",
+                    about: "Sobre mí",
                 }
             },
             ca: {
                 translation: {
-                    intro: "Catalan intro",
+                    intro: "Catalan placeholder",
+                    introButton: "Fes scroll cap avall o clica la fletxa",
+                    about: "Sobre mi",
                 }
             }
         }

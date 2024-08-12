@@ -15,7 +15,14 @@ export default {
       "white": "#fafafa",
       "black": "#222222",
     },
-    extend: {},
+    extend: {
+      height: {
+        "500": "200vh",
+      },
+      width: {
+        "500": "200vw",
+      },
+    },
   },
   plugins: [],
 }
