@@ -71,7 +71,7 @@ function Intro() {
       {/* <p className="text-xl font-dmsans select-none dark:text-white">
         <Trans i18nKey="intro" />
       </p> */}
-      <div id='arrowDown' className='absolute bottom-20 opacity-0 flex flex-col justify-center items-center'>
+      <div id='arrowDown' className='absolute bottom-20 lg:opacity-0 flex flex-col justify-center items-center'>
         <button className='focus:outline-none' onClick={transitionDown}>
           <img src={ArrowDownLight} alt='Arrow Down' className='w-16 h-16 animate-bounce dark:hidden'/>
           <img src={ArrowDownDark} alt='Arrow Down' className='w-16 h-16 animate-bounce hidden dark:block'/>
