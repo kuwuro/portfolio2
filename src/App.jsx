@@ -133,10 +133,10 @@ function App() {
       <div id='bgDark' className='bg-animation absolute h-500 w-500 z-0 dark:opacity-5 opacity-0'>
         <img src={BackgroundDark} alt='Background' className='h-500 w-500 object-cover'/>
       </div>
-      <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 lg:hidden opacity-0 transition duration-500 z-50'>
+      <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 lg:hidden lg:opacity-0 transition duration-500 z-50'>
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
-      <div id="intro" className='opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
+      <div id="intro" className='lg:opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
         <Intro/>
       </div>
       <div id="about" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
