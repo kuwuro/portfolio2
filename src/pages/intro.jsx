@@ -7,10 +7,10 @@ function Intro() {
   const { t } = useTranslation();
   const [titleHtml, setTitleHtml] = useState('');
 
-  function scrollDown(event) {
-    event.deltaY > 0 && transitionDown();
-  }
-  addEventListener('wheel', scrollDown);
+  // function scrollDown(event) {
+  //   event.deltaY > 0 && transitionDown();
+  // }
+  // addEventListener('wheel', scrollDown);
 
   useEffect(() => {
     const updateTitle = () => {
@@ -34,7 +34,7 @@ function Intro() {
   }, []);
 
   function transitionDown() {
-    removeEventListener('wheel', scrollDown);
+    // removeEventListener('wheel', scrollDown);
     const arrowDown = document.getElementById('arrowDown');
     const intro = document.getElementById('intro');
     intro.classList.add('transition-up');
