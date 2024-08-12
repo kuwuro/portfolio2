@@ -15,17 +15,17 @@ function Intro() {
   useEffect(() => {
     const updateTitle = () => {
       const titleText = 'ENRIC ARMENGOL';
-      // const screenWidth = window.innerWidth;
+      const screenWidth = window.innerWidth;
 
-      // if (screenWidth <= 600) {
-      //   const breakText = titleText.replace(/\s/g, '<br>');
-      //   setTitleHtml(breakText);
-      // } else {
+      if (screenWidth <= 600) {
+        const breakText = titleText.replace(/\s/g, '<br>');
+        setTitleHtml(breakText);
+      } else {
         const spannedText = titleText.split('').map((letter, index) => 
           `<span style="--i:${index + 1}">${letter}</span>`
         ).join('');
         setTitleHtml(spannedText);
-      // }
+      }
     };
 
     updateTitle();

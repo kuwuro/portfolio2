@@ -126,9 +126,9 @@ function App() {
 
   return (
     <div className='background-layer flex items-center justify-center overflow-hidden'>
-      <div id='bgLight' className='bg-animation absolute h-500 w-500 z-0 opacity-40'>
+      {/* <div id='bgLight' className='bg-animation absolute h-500 w-500 z-0 opacity-40'>
         <img src={BackgroundLight} alt='Background' className='h-500 w-500 object-cover'/>
-      </div>
+      </div> */}
       <div className='absolute dark:opacity-100 opacity-5 bg-black h-full w-full z-0'></div>
       <div id='bgDark' className='bg-animation absolute h-500 w-500 z-0 dark:opacity-5 opacity-0'>
         <img src={BackgroundDark} alt='Background' className='h-500 w-500 object-cover'/>
