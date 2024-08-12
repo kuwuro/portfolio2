@@ -126,17 +126,17 @@ function App() {
 
   return (
     <div className='background-layer flex items-center justify-center overflow-hidden'>
-      <div id='bgLight' className='bg-animation absolute h-500 w-500 z-0 opacity-40'>
+      <div id='bgLight' className='bg-animation absolute h-500 w-500 z-10 opacity-40 overflow-hidden'>
         <img src={BackgroundLight} alt='Background' className='h-500 w-500 object-cover'/>
       </div>
       <div className='absolute dark:opacity-100 opacity-5 bg-black h-full w-full z-0'></div>
-      <div id='bgDark' className='bg-animation absolute h-500 w-500 z-0 dark:opacity-5 opacity-0'>
+      <div id='bgDark' className='bg-animation absolute h-500 w-500 z-0 dark:opacity-5 opacity-0 overflow-hidden'>
         <img src={BackgroundDark} alt='Background' className='h-500 w-500 object-cover'/>
       </div>
       <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-50'>
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
-      <div id="intro" className='opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
+      <div id="intro" className='opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10 overflow-hidden'>
         <Intro/>
       </div>
       <div id="about" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
