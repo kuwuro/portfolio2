@@ -66,7 +66,7 @@ function Intro() {
           style={{ whiteSpace: 'pre' }}
           dangerouslySetInnerHTML={{ __html: titleHtml }}
         />
-        <p id='webDev' className="lg:text-2xl text-xl font-poppins select-none dark:text-white opacity-0 transition duration-500">WEB DESIGNER & DEVELOPER</p>
+        <p id='webDev' className="lg:text-2xl text-xl font-poppins select-none dark:text-white lg:opacity-0 transition duration-500">WEB DESIGNER & DEVELOPER</p>
       </div>
       {/* <p className="text-xl font-dmsans select-none dark:text-white">
         <Trans i18nKey="intro" />
@@ -76,7 +76,9 @@ function Intro() {
           <img src={ArrowDownLight} alt='Arrow Down' className='w-16 h-16 animate-bounce dark:hidden'/>
           <img src={ArrowDownDark} alt='Arrow Down' className='w-16 h-16 animate-bounce hidden dark:block'/>
         </button>
-        <p className='dark:text-white font-dmsans'>{t('introButton')}</p>
+        <p className='dark:text-white font-dmsans'>
+          {screen.width <= 600 ? t('introButtonMobile') : t('introButton')}
+        </p>
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ i18next
                 translation: {
                     intro: "English placeholder",
                     introButton: "Scroll down or click the arrow",
+                    introButtonMobile: "Tap the arrow",
                     about: "About me",
                 }
             },
@@ -20,6 +21,7 @@ i18next
                 translation: {
                     intro: "Spanish placeholder",
                     introButton: "Haz scroll hacia abajo o haz click en la flecha",
+                    introButtonMobile: "Toca la flecha",
                     about: "Sobre mí",
                 }
             },
@@ -27,6 +29,7 @@ i18next
                 translation: {
                     intro: "Catalan placeholder",
                     introButton: "Fes scroll cap avall o clica la fletxa",
+                    introButtonMobile: "Toca la fletxa",
                     about: "Sobre mi",
                 }
             }
