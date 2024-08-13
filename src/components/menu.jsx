@@ -17,6 +17,12 @@ function goHome() {
     content.classList.add('transition-down');
     setTimeout(() => {
         content.classList.add('hidden');
+        document.getElementById('gridTiles').children[0].classList.remove('fade-left');
+        document.getElementById('gridTiles').children[1].classList.remove('fade-left');
+        document.getElementById('gridTiles').children[2].classList.remove('fade-left');
+        document.getElementById('gridTiles').children[3].classList.remove('fade-left');
+        document.getElementById('gridTiles').children[4].classList.remove('fade-left');
+        document.getElementById('gridTiles').children[5].classList.remove('fade-left');
     }, 400);
     setTimeout(() => {
         bgDark.classList.remove('hidden');

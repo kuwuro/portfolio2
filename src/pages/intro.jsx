@@ -77,6 +77,12 @@ function Intro({ darkMode }) {
       setTimeout(() => {
         document.getElementById('content').classList.remove('opacity-0');
         intro.classList.remove('transition-up');
+        document.getElementById('gridTiles').children[0].classList.add('fade-left');
+        document.getElementById('gridTiles').children[1].classList.add('fade-left');
+        document.getElementById('gridTiles').children[2].classList.add('fade-left');
+        document.getElementById('gridTiles').children[3].classList.add('fade-left');
+        document.getElementById('gridTiles').children[4].classList.add('fade-left');
+        document.getElementById('gridTiles').children[5].classList.add('fade-left');
       }, 700);
     }, 700);
   }

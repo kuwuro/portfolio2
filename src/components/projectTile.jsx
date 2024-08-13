@@ -19,7 +19,7 @@ function ProjectTile({ project, gridCols, gridRows }) {
     } : {};
 
     return (
-        <div onClick={handleOpenModal} className="cursor-pointer flex flex-col w-full h-28 lg:h-full rounded-lg brightness-75 hover:brightness-100 transition duration-200 bg-cover bg-center" style={{...gridStyle, backgroundImage: `url(${project.img})`}}>
+        <div onClick={handleOpenModal} className="cursor-pointer flex flex-col w-full h-40 lg:h-full rounded-lg brightness-75 hover:brightness-100 transition duration-200 bg-cover bg-center" style={{...gridStyle, backgroundImage: `url(${project.img})`, animationDelay: `${project.animationDelay}`}}>
             {modalOpen && <ProjectModal project={project} onClose={handleCloseModal} />}
         </div>
     );
