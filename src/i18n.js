@@ -14,7 +14,8 @@ i18next
                     intro: "English placeholder",
                     introButton: "Scroll down or click the arrow",
                     introButtonMobile: "Tap the arrow",
-                    about: "About me",
+                    downloadCV: "Download CV",
+                    projectsTitle: "Projects",
                 }
             },
             es: {
@@ -22,7 +23,8 @@ i18next
                     intro: "Spanish placeholder",
                     introButton: "Haz scroll hacia abajo o haz click en la flecha",
                     introButtonMobile: "Toca la flecha",
-                    about: "Sobre mí",
+                    downloadCV: "Descargar CV",
+                    projectsTitle: "Proyectos",
                 }
             },
             ca: {
@@ -30,7 +32,8 @@ i18next
                     intro: "Catalan placeholder",
                     introButton: "Fes scroll cap avall o clica la fletxa",
                     introButtonMobile: "Toca la fletxa",
-                    about: "Sobre mi",
+                    downloadCV: "Descarregar CV",
+                    projectsTitle: "Projectes",
                 }
             }
         }

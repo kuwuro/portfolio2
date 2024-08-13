@@ -1,18 +1,29 @@
 import React from "react";
 import HomeIconDark from "../assets/icons/BxsHomeDark.svg";
 import HomeIconLight from "../assets/icons/BxsHomeLight.svg";
+import DownloadCVLight from "../assets/icons/DownloadCVLight.svg";
+import DownloadCVDark from "../assets/icons/DownloadCVDark.svg";
+import i18n from 'i18next';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+
+const lngs = {
+    en: { nativeName: "ENG" },
+    es: { nativeName: "ESP" },
+    ca: { nativeName: "CAT" },
+};
 
 function goHome() {
     const intro = document.getElementById('intro');
-    const about = document.getElementById('about');
+    const content = document.getElementById('content');
     const menu = document.getElementById('menu');
     const bgDark = document.getElementById('bgDark');
     const bgLight = document.getElementById('bgLight');
     const arrowDown = document.getElementById('arrowDown');
 
-    about.classList.add('transition-down');
+    content.classList.add('transition-down');
     setTimeout(() => {
-        about.classList.add('hidden');
+        content.classList.add('hidden');
     }, 400);
     setTimeout(() => {
         bgDark.classList.remove('hidden');
@@ -27,24 +38,54 @@ function goHome() {
             setTimeout(() => {
                 intro.classList.remove('opacity-0');
                 arrowDown.classList.remove('opacity-0');
-                about.classList.remove('transition-down');
-                about.classList.add('opacity-0');
+                content.classList.remove('transition-down');
+                content.classList.add('opacity-0');
                 addEventListener('wheel', scrollDown);
             }, 800);
         }, 400);
     }, 800);
 }
 
+function cvDownload() {
+    if (i18n.language === 'en') {
+        window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', '_blank');
+    } else if (i18n.language === 'es') {
+        window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', '_blank');
+    } else if (i18n.language === 'ca') {
+        window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolCAT.pdf', '_blank');
+    }
+}
+
 function Menu({ darkMode }) {
+    const { t } = useTranslation();
+    const screenWidth = window.innerWidth;
     return (
-        <div>
+        <div className="flex items-center justify-center relative">
             <button onClick={goHome}>
                 {!darkMode ? (
-                    <img src={HomeIconLight} alt="Home" className="w-8 h-8 hover:scale-110 transition duration-200" />
+                    <img src={HomeIconLight} alt="Home" className="w-9 h-9 hover:scale-110 transition duration-200" />
                 ) : (
-                    <img src={HomeIconDark} alt="Home" className="w-8 h-8 hover:scale-110 transition duration-200" />
+                    <img src={HomeIconDark} alt="Home" className="w-9 h-9 hover:scale-110 transition duration-200" />
                 )}
-            </button>          
+            </button>   
+            {screenWidth >= 600 ? (
+                <button onClick={cvDownload} className="absolute border-black dark:border-white w-48 left-16 border-2 rounded-lg py-2 hover:scale-105 transition duration-200 flex justify-center items-center gap-2">
+                    <p className="font-dmsans font-bold text-md dark:text-white text-black">{t('downloadCV')}</p>
+                    {!darkMode ? (
+                        <img src={DownloadCVLight} alt="Download CV" className="w-7 h-7" />
+                    ) : (
+                        <img src={DownloadCVDark} alt="Download CV" className="w-7 h-7" />
+                    )}
+                </button>
+            ) : (
+                <button id="downloadCV" onClick={cvDownload} className="absolute left-14 w-20 hover:scale-105 transition duration-200">
+                    {!darkMode ? (
+                        <img src={DownloadCVLight} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
+                    ) : (
+                        <img src={DownloadCVDark} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
+                    )}
+                </button>
+            )}
         </div>
     );
 }

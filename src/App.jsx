@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './index.css'
 import Intro from './pages/intro'
-import About from './pages/about'
+import Content from './pages/content'
 import Settings from './components/settings'
 import Menu from './components/menu'
 import BackgroundLight from './assets/media/bgLight.svg'
@@ -147,8 +147,8 @@ function App() {
       <div id="intro" className='lg:opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
         <Intro/>
       </div>
-      <div id="about" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
-        <About/>
+      <div id="content" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
+        <Content/>
       </div>
     </div>
   );

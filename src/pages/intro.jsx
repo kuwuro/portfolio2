@@ -44,7 +44,7 @@ function Intro() {
     }, 400);
     setTimeout(() => {
       arrowDown.classList.add('hidden');
-      document.getElementById('about').classList.remove('hidden');
+      document.getElementById('content').classList.remove('hidden');
       document.getElementById('bgDark').classList.remove('dark:opacity-5');
       document.getElementById('bgLight').classList.remove('opacity-40');
       document.getElementById('bgDark').classList.add('dark:opacity-0');
@@ -58,7 +58,7 @@ function Intro() {
         document.getElementById('bgLight').classList.add('hidden');
       }, 400);
       setTimeout(() => {
-        document.getElementById('about').classList.remove('opacity-0');
+        document.getElementById('content').classList.remove('opacity-0');
         intro.classList.remove('transition-up');
       }, 700);
     }, 700);

@@ -6,16 +6,16 @@ export default {
   ],
   darkMode: "selector",
   theme: {
-    fontFamily: {
-      "dmsans": ["DM Sans", "sans-serif"],
-      "montserrat": ["Montserrat", "sans-serif"],
-      "poppins": ["Poppins", "sans-serif"],
-    },
-    colors: {
-      "white": "#fafafa",
-      "black": "#222222",
-    },
     extend: {
+      fontFamily: {
+        "dmsans": ["DM Sans", "sans-serif"],
+        "montserrat": ["Montserrat", "sans-serif"],
+        "poppins": ["Poppins", "sans-serif"],
+      },
+      colors: {
+        "white": "#fafafa",
+        "black": "#222222",
+      },
       height: {
         "500": "200vh",
       },
