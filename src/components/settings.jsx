@@ -18,6 +18,7 @@ function Settings({ darkModeHandler, darkMode }) {
     const handleLanguageChange = (lng) => {
         i18n.changeLanguage(lng);
         setSelectedLanguage(lng);
+        showLanguages();
     };
     
     function switchDarkMode() {
