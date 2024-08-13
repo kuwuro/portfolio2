@@ -15,6 +15,7 @@ export default {
       colors: {
         "white": "#fafafa",
         "black": "#222222",
+        "black70": "#22222270",
       },
       height: {
         "500": "200vh",

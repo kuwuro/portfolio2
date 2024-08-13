@@ -5,13 +5,6 @@ import DownloadCVLight from "../assets/icons/DownloadCVLight.svg";
 import DownloadCVDark from "../assets/icons/DownloadCVDark.svg";
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
-
-const lngs = {
-    en: { nativeName: "ENG" },
-    es: { nativeName: "ESP" },
-    ca: { nativeName: "CAT" },
-};
 
 function goHome() {
     const intro = document.getElementById('intro');
