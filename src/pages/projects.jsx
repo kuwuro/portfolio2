@@ -50,9 +50,9 @@ const projects = [
 function Projects({ darkMode }) {
     const { t } = useTranslation();
     return (
-        <div className="lg:mx-12 mx-8 lg:my-40 my-24 flex flex-col gap-5 justify-start items-start" style={{ height: `80vh` }}>
+        <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col gap-8 justify-start items-start" style={{ height: `80vh` }}>
             <h1 className="text-5xl font-poppins dark:text-white">{t('projectsTitle')}</h1>
-            <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:overflow-visible overflow-auto" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
+            <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:overflow-visible overflow-auto lg:mb-0 mb-8" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
                 <ProjectTile project={projects[0]} gridCols={2} gridRows={5}/>
                 <ProjectTile project={projects[1]} gridCols={2} gridRows={2}/>
                 <ProjectTile project={projects[2]} gridCols={2} gridRows={3}/>
