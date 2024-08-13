@@ -101,7 +101,7 @@ function App() {
           }, 200);
         }, 500);
       }, 500);  
-    }, 1500);
+    }, 1500);    
     setTimeout(() => {
       generateRandomRipple();
       body.addEventListener('click', function (e) {
@@ -118,8 +118,8 @@ function App() {
         document.getElementById('settings').classList.add('opacity-100');
         document.getElementById('arrowDown').classList.add('opacity-100');
       }, 500);
-    }, 3300);  
-      
+    }, 3300);
+
     body.addEventListener('mousemove', (e) => {
       const currentTime = new Date().getTime();
       if (currentTime - lastRippleTime > 50) {
