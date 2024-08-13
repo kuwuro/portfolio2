@@ -78,7 +78,7 @@ function Menu({ darkMode }) {
                     )}
                 </button>
             ) : (
-                <button id="downloadCV" onClick={cvDownload} className="absolute left-14 w-20 hover:scale-105 transition duration-200">
+                <button id="downloadCV" onClick={cvDownload} className="absolute left-16 w-20 hover:scale-105 transition duration-200">
                     {!darkMode ? (
                         <img src={DownloadCVLight} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
                     ) : (
