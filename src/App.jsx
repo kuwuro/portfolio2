@@ -87,6 +87,18 @@ function App() {
         setTimeout(() => {      
           document.getElementById('webDev').classList.remove('lg:opacity-0');    
           document.getElementById('webDev').classList.add('opacity-100');
+          setTimeout(() => {
+            setTimeout(() => {
+              document.getElementById('socials').children[0].classList.add('socials-animation');
+            }, 50);
+            setTimeout(() => {
+              document.getElementById('socials').children[1].classList.add('socials-animation');
+            }, 250);
+            setTimeout(() => {
+              document.getElementById('socials').children[2].classList.add('socials-animation');
+              document.getElementById('socials').classList.remove('lg:opacity-0');
+            }, 450);            
+          }, 200);
         }, 500);
       }, 500);  
     }, 1500);
@@ -145,10 +157,10 @@ function App() {
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
       <div id="intro" className='lg:opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
-        <Intro/>
+        <Intro darkMode={darkMode}/>
       </div>
       <div id="content" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
-        <Content/>
+        <Content darkMode={darkMode}/>
       </div>
     </div>
   );

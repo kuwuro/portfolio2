@@ -1,9 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import i18n  from 'i18next';
+import { useTranslation } from 'react-i18next';
 import ArrowDownDark from '../assets/icons/ArrowDownDark.svg';
 import ArrowDownLight from '../assets/icons/ArrowDownLight.svg';
+import GithubDark from '../assets/icons/GithubDark.svg';
+import GithubLight from '../assets/icons/GithubLight.svg';
+import LinkedinDark from '../assets/icons/LinkedinDark.svg';
+import LinkedinLight from '../assets/icons/LinkedinLight.svg';
+import DownloadCVDark from '../assets/icons/DownloadCVDark.svg';
+import DownloadCVLight from '../assets/icons/DownloadCVLight.svg';
 
-function Intro() {
+function downloadCV() {
+  if (i18n.language === 'en') {
+      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', '_blank');
+  } else if (i18n.language === 'es') {
+      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', '_blank');
+  } else if (i18n.language === 'ca') {
+      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolCAT.pdf', '_blank');
+  }
+}
+
+function Intro({ darkMode }) {
   const { t } = useTranslation();
   const [titleHtml, setTitleHtml] = useState('');
 
@@ -65,7 +82,7 @@ function Intro() {
   }
 
   return (
-    <div id="title" className="text-center flex flex-col justify-center items-center gap-4">
+    <div id="title" className="text-center flex flex-col justify-center items-center gap-5">
       <div className='flex flex-col gap-2'>
         <h1 id='enricAr'
           className="lg:text-7xl text-5xl font-poppins select-none tracking-widest dark:text-white"
@@ -74,9 +91,29 @@ function Intro() {
         />
         <p id='webDev' className="lg:text-2xl text-xl font-poppins select-none dark:text-white lg:opacity-0 transition lg:duration-500 duration-300">WEB DESIGNER & DEVELOPER</p>
       </div>
-      {/* <p className="text-xl font-dmsans select-none dark:text-white">
-        <Trans i18nKey="intro" />
-      </p> */}
+      <div id='socials' className='flex justify-center items-center gap-6 lg:opacity-0 transition lg:duration-500 duration-300'>
+        <a href="https://github.com/kuwuro" target="_blank" rel="noreferrer">
+          {!darkMode ? (
+            <img src={GithubLight} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
+          ) : (
+            <img src={GithubDark} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
+          )}
+        </a>
+        <a href="https://www.linkedin.com/in/enric-armengol/" target="_blank" rel="noreferrer">
+          {!darkMode ? (
+            <img src={LinkedinLight} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
+          ) : (
+            <img src={LinkedinDark} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
+          )}
+        </a>
+        <button onClick={downloadCV}>
+          {!darkMode ? (
+            <img src={DownloadCVLight} alt="Download CV" className="w-12 h-12 hover:scale-110 transition duration-200" />
+          ) : (
+            <img src={DownloadCVDark} alt="Download CV" className="w-12 h-12 hover:scale-110 transition duration-200" />
+          )}
+        </button>
+      </div>
       <div id='arrowDown' className='absolute bottom-20 lg:opacity-0 flex flex-col justify-center items-center'>
         <button className='focus:outline-none' onClick={transitionDown}>
           <img src={ArrowDownLight} alt='Arrow Down' className='w-16 h-16 animate-bounce dark:hidden'/>
