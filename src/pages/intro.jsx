@@ -11,12 +11,12 @@ import DownloadCVDark from '../assets/icons/CvDark.svg';
 import DownloadCVLight from '../assets/icons/CvLight.svg';
 
 function downloadCV() {
-  if (i18n.language === 'en') {
-      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', '_blank');
+  if (i18n.language === 'en' || i18n.language === 'en-US') {
+      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', 'mozillaTab');
   } else if (i18n.language === 'es') {
-      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', '_blank');
+      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', 'mozillaTab');
   } else if (i18n.language === 'ca') {
-      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolCAT.pdf', '_blank');
+      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolCAT.pdf', 'mozillaTab');
   }
 }
 

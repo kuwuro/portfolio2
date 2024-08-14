@@ -46,7 +46,7 @@ function goHome() {
 }
 
 function cvDownload() {
-    if (i18n.language === 'en') {
+    if (i18n.language === 'en' || i18n.language === 'en-US') {
         window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', '_blank');
     } else if (i18n.language === 'es') {
         window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', '_blank');
