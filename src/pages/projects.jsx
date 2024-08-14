@@ -16,7 +16,7 @@ const projects = [
     {
         animationDelay: '0.2s',
         animDelayMobile: '0.2s',
-        title: 'project2',
+        title: 'DeltaShop',
         description: 'project2Description',
         coverPC: 'https://images.unsplash.com/photo-1723242015501-2a52cfb64ed9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         coverMobile: "https://images.unsplash.com/photo-1723242015501-2a52cfb64ed9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -26,7 +26,7 @@ const projects = [
     {
         animationDelay: '0.5s',
         animDelayMobile: '0.3s',
-        title: 'project3',
+        title: 'Desktopfolio',
         description: 'project3Description',
         coverPC: 'https://images.unsplash.com/photo-1723242017539-39cd15eb75fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         coverMobile: "https://images.unsplash.com/photo-1723242017539-39cd15eb75fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -36,7 +36,7 @@ const projects = [
     {
         animationDelay: '0.3s',
         animDelayMobile: '0.4s',
-        title: 'project4',
+        title: 'Delta Bark\'s',
         description: 'project4Description',
         coverPC: 'https://images.unsplash.com/photo-1721225643686-cafccc8ba6f6?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         coverMobile: "https://images.unsplash.com/photo-1721225643686-cafccc8ba6f6?q=80&w=2054&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -46,7 +46,7 @@ const projects = [
     {
         animationDelay: '0.6s',
         animDelayMobile: '0.5s',
-        title: 'project5',
+        title: 'Psycomputers',
         description: 'project5Description',
         coverPC: 'https://images.unsplash.com/photo-1722608274454-699ed706d7f5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         coverMobile: "https://images.unsplash.com/photo-1722608274454-699ed706d7f5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -56,10 +56,10 @@ const projects = [
     {
         animationDelay: '0.4s',
         animDelayMobile: '0.6s',
-        title: 'project6',
+        title: 'Can Mauri',
         description: 'project6Description',
-        coverPC: 'https://images.unsplash.com/photo-1723297503507-7049305a3f06?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        coverMobile: "https://images.unsplash.com/photo-1723297503507-7049305a3f06?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverPC: 'https://www.enricarmengol.com/projectPictures/canmauri/canmauriPC1.png',
+        coverMobile: "https://www.enricarmengol.com/projectPictures/canmauri/canmauriMobile1.png",
         link: 'project6Link',
         tech: ['tech1', 'tech2', 'tech3']
     }
