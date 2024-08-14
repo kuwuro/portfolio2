@@ -4,8 +4,8 @@ import Modal from "./modal.jsx";
 function ProjectModal({ project, onClose }) {
     return (
         <Modal onClose={onClose}>
-            <div className="flex flex-col gap-5">
-                <img src={project.img} alt={project.title} className="rounded-lg shadow-lg h-52 w-52"/>
+            <div className="flex flex-col gap-5" style={{ width: "500px" }}>
+                <div className="w-full bg-cover bg-center rounded-lg shadow-xl" style={{ height: "300px", backgroundImage: `url(${project.img})`}}></div>
                 <h1 className="text-3xl font-poppins dark:text-white">{project.title}</h1>
                 <p className="text-lg dark:text-white">{project.description}</p>
                 <div className="flex gap-2">

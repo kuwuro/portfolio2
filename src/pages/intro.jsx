@@ -7,8 +7,8 @@ import GithubDark from '../assets/icons/GithubDark.svg';
 import GithubLight from '../assets/icons/GithubLight.svg';
 import LinkedinDark from '../assets/icons/LinkedinDark.svg';
 import LinkedinLight from '../assets/icons/LinkedinLight.svg';
-import DownloadCVDark from '../assets/icons/DownloadCVDark.svg';
-import DownloadCVLight from '../assets/icons/DownloadCVLight.svg';
+import DownloadCVDark from '../assets/icons/CvDark.svg';
+import DownloadCVLight from '../assets/icons/CvLight.svg';
 
 function downloadCV() {
   if (i18n.language === 'en') {
@@ -114,9 +114,9 @@ function Intro({ darkMode }) {
         </a>
         <button onClick={downloadCV}>
           {!darkMode ? (
-            <img src={DownloadCVLight} alt="Download CV" className="w-12 h-12 hover:scale-110 transition duration-200" />
+            <img src={DownloadCVLight} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
           ) : (
-            <img src={DownloadCVDark} alt="Download CV" className="w-12 h-12 hover:scale-110 transition duration-200" />
+            <img src={DownloadCVDark} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
           )}
         </button>
       </div>
