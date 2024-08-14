@@ -16,6 +16,7 @@ i18next
                     introButtonMobile: "Tap the arrow",
                     downloadCV: "Download CV",
                     projectsTitle: "Projects",
+                    fundflowDescription: "This will be the description for Fundflow",
                 }
             },
             es: {
@@ -25,6 +26,7 @@ i18next
                     introButtonMobile: "Toca la flecha",
                     downloadCV: "Descargar CV",
                     projectsTitle: "Proyectos",
+                    fundflowDescription: "Esta será la descripción de Fundflow",
                 }
             },
             ca: {
@@ -34,6 +36,7 @@ i18next
                     introButtonMobile: "Toca la fletxa",
                     downloadCV: "Descarregar CV",
                     projectsTitle: "Projectes",
+                    fundflowDescription: "Aquesta serà la descripció de Fundflow",
                 }
             }
         }

@@ -6,8 +6,8 @@ const projects = [
     {
         animationDelay: '0.1s',
         animDelayMobile: '0.1s',
-        title: 'project1',
-        description: 'project1Description',
+        title: 'fundflow',
+        description: 'fundflowDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/fundflow/fundflowPC.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/fundflow/fundflowMobile.png",
         link: 'project1Link',
