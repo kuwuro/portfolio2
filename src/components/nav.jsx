@@ -22,7 +22,7 @@ function Nav({ currentTab, setCurrentTab }) {
                 )}
                 {currentTab === "about" ? (
                     <li className="bg-white50 dark:bg-white20 py-2.5 px-5  rounded-3xl transition duration-300">
-                        <button onClick={() => setCurrentTab("about")}>{t('aboutTitle')}</button>
+                        <button onClick={() => setCurrentTab("about")}><nobr>{t('aboutTitle')}</nobr></button>
                     </li>
                 ) : (
                     <li className="bg-transparent py-2.5 px-5  group rounded-3xl transition duration-300">
