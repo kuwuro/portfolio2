@@ -71,7 +71,7 @@ function Menu({ darkMode }) {
                 )}
             </button>   
             {screenWidth >= 600 ? (
-                <button onClick={cvDownload} className="absolute border-black dark:border-white w-48 left-16 border-2 rounded-lg py-2 hover:scale-105 transition duration-200 flex justify-center items-center gap-2">
+                <button onClick={cvDownload} className="absolute border-black dark:border-white w-48 left-16 border-2 rounded-3xl py-2 hover:scale-105 transition duration-200 flex justify-center items-center gap-2">
                     <p className="font-dmsans font-bold text-md dark:text-white text-black">{t('downloadCV')}</p>
                     {!darkMode ? (
                         <img src={DownloadCVLight} alt="Download CV" className="w-7 h-7" />

@@ -166,11 +166,11 @@ function App() {
         <Menu darkMode={darkMode}/>
       </div>
       {screenWidth >= 1080 ? (
-        <div id='nav' className='fixed top-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 lg:my-12 my-8 z-40'>
+        <div id='nav' className='fixed top-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 my-11 z-40'>
           <Nav currentTab={currentTab} setCurrentTab={setCurrentTab}/>
         </div>
       ) : (
-        <div id='nav' className='fixed bottom-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 lg:my-12 my-8 z-40'>
+        <div id='nav' className='fixed bottom-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 my-8 z-40'>
           <Nav currentTab={currentTab} setCurrentTab={setCurrentTab}/>
         </div>
       )}

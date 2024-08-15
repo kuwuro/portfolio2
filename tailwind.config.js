@@ -17,6 +17,7 @@ export default {
         "white20": "#fafafa20",
         "white50": "#fafafa50",
         "black": "#222222",
+        "black20": "#22222220",
         "black80": "#22222280",
       },
       height: {
