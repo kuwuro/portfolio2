@@ -72,12 +72,12 @@ function Projects({ darkMode }) {
         <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start" style={{ height: `${screenWidth < 1080 ? '73vh' : '80vh'}` }}>
             <h1 className="lg:text-5xl text-4xl font-poppins dark:text-white">{t('projectsTitle')}</h1>
             <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:overflow-visible overflow-auto overflow-x-hidden lg:mb-0 mb-8" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
-                <ProjectTile project={projects[0]} gridCols={2} gridRows={5} style={{ animationDelay: `0.1s` }}/>
-                <ProjectTile project={projects[1]} gridCols={2} gridRows={2} style={{ animationDelay: `0.1s` }}/>
-                <ProjectTile project={projects[2]} gridCols={2} gridRows={3} style={{ animationDelay: `0.1s` }}/>
-                <ProjectTile project={projects[3]} gridCols={2} gridRows={2} style={{ animationDelay: `0.1s` }}/>
-                <ProjectTile project={projects[4]} gridCols={2} gridRows={1} style={{ animationDelay: `0.1s` }}/>
-                <ProjectTile project={projects[5]} gridCols={4} gridRows={1} style={{ animationDelay: `0.1s` }}/>
+                <ProjectTile project={projects[0]} gridCols={2} gridRows={5}/>
+                <ProjectTile project={projects[1]} gridCols={2} gridRows={2}/>
+                <ProjectTile project={projects[2]} gridCols={2} gridRows={3}/>
+                <ProjectTile project={projects[3]} gridCols={2} gridRows={2}/>
+                <ProjectTile project={projects[4]} gridCols={2} gridRows={1}/>
+                <ProjectTile project={projects[5]} gridCols={4} gridRows={1}/>
             </div>
         </div>
     );

@@ -20,7 +20,7 @@ function downloadCV() {
   }
 }
 
-function Intro({ darkMode }) {
+function Intro({ darkMode, setCurrentTab }) {
   const { t } = useTranslation();
   const [titleHtml, setTitleHtml] = useState('');
 
@@ -55,6 +55,7 @@ function Intro({ darkMode }) {
     const arrowDown = document.getElementById('arrowDown');
     const intro = document.getElementById('intro');
     intro.classList.add('transition-up');
+    setCurrentTab('projects');
     setTimeout(() => {
       intro.classList.add('hidden');
       intro.classList.add('opacity-0');
@@ -67,8 +68,10 @@ function Intro({ darkMode }) {
       document.getElementById('bgDark').classList.add('dark:opacity-0');
       document.getElementById('bgLight').classList.add('opacity-0');
       document.getElementById('menu').classList.remove('hidden');
+      document.getElementById('nav').classList.remove('hidden');
       setTimeout(() => {
         document.getElementById('menu').classList.remove('opacity-0');
+        document.getElementById('nav').classList.remove('opacity-0');
       }, 200);
       setTimeout(() => {
         document.getElementById('bgDark').classList.add('hidden');

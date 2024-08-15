@@ -15,6 +15,7 @@ export default {
       colors: {
         "white": "#fafafa",
         "white20": "#fafafa20",
+        "white50": "#fafafa50",
         "black": "#222222",
         "black80": "#22222280",
       },

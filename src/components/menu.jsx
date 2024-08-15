@@ -10,6 +10,7 @@ function goHome() {
     const intro = document.getElementById('intro');
     const content = document.getElementById('content');
     const menu = document.getElementById('menu');
+    const nav = document.getElementById('nav');
     const bgDark = document.getElementById('bgDark');
     const bgLight = document.getElementById('bgLight');
     const arrowDown = document.getElementById('arrowDown');
@@ -28,12 +29,14 @@ function goHome() {
         bgDark.classList.remove('hidden');
         bgLight.classList.remove('hidden');
         menu.classList.add('opacity-0');
+        nav.classList.add('opacity-0');
         setTimeout(() => {
             bgDark.classList.add('dark:opacity-5');
             bgLight.classList.add('opacity-40');
             intro.classList.remove('hidden');
             arrowDown.classList.remove('hidden');
             menu.classList.add('hidden');
+            nav.classList.add('hidden');
             setTimeout(() => {
                 intro.classList.remove('opacity-0');
                 arrowDown.classList.remove('opacity-0');

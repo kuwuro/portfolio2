@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './index.css'
 import Intro from './pages/intro'
 import Content from './pages/content'
 import Settings from './components/settings'
 import Menu from './components/menu'
+import Nav from './components/nav'
 import BackgroundLight from './assets/media/bgLight.svg'
 import BackgroundDark from './assets/media/bgDark.svg'
 
@@ -40,18 +41,25 @@ document.addEventListener("visibilitychange", function() {
 });
 
 function createSmallRipple(x, y) {
-  const smallRipple = document.createElement('div');
-  smallRipple.classList.add('small-ripple');
-  smallRipple.style.left = x + 'px';
-  smallRipple.style.top = y + 'px';
-  document.body.appendChild(smallRipple);
+  if (document.getElementById('intro').classList.contains('hidden')) {
+    return;
+  } else if (document.visibilityState === 'visible') {
+    const smallRipple = document.createElement('div');
+    smallRipple.classList.add('small-ripple');
+    smallRipple.style.left = x + 'px';
+    smallRipple.style.top = y + 'px';
+    document.body.appendChild(smallRipple);
 
-  smallRipple.addEventListener('animationend', () => {
-      smallRipple.remove();
-  });
+    smallRipple.addEventListener('animationend', () => {
+        smallRipple.remove();
+    });
+  }
 }
 
 function createClickRipple(x, y, isRandom = false) {
+  if (document.getElementById('intro').classList.contains('hidden')) {
+    return;
+  } else if (document.visibilityState === 'visible') {
     const clickRipple = document.createElement('div');
     clickRipple.classList.add('click-ripple');
     clickRipple.style.left = (x / window.innerWidth) * 100 + '%';
@@ -65,9 +73,13 @@ function createClickRipple(x, y, isRandom = false) {
     clickRipple.addEventListener('animationend', () => {
         clickRipple.remove();
     });
+  }
 }
 
 function App() {
+  const screenWidth = window.innerWidth;
+  const [currentTab, setCurrentTab] = useState('');
+
   let body = document.querySelector('body');
   let lastRippleTime = 0;
 
@@ -153,14 +165,23 @@ function App() {
       <div id='menu' className='fixed top-0 left-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-50'>
         <Menu darkMode={darkMode}/>
       </div>
+      {screenWidth >= 1080 ? (
+        <div id='nav' className='fixed top-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 lg:my-12 my-8 z-40'>
+          <Nav currentTab={currentTab} setCurrentTab={setCurrentTab}/>
+        </div>
+      ) : (
+        <div id='nav' className='fixed bottom-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 lg:my-12 my-8 z-40'>
+          <Nav currentTab={currentTab} setCurrentTab={setCurrentTab}/>
+        </div>
+      )}
       <div id='settings' className='fixed top-0 right-0 lg:m-12 m-8 lg:hidden lg:opacity-0 transition duration-500 z-50'>
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
       <div id="intro" className='lg:opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
-        <Intro darkMode={darkMode}/>
+        <Intro darkMode={darkMode} setCurrentTab={setCurrentTab}/>
       </div>
       <div id="content" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
-        <Content darkMode={darkMode}/>
+        <Content darkMode={darkMode} currentTab={currentTab} setCurrentTab={setCurrentTab}/>
       </div>
     </div>
   );

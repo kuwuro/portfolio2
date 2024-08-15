@@ -16,6 +16,8 @@ i18next
                     introButtonMobile: "Tap the arrow",
                     downloadCV: "Download CV",
                     projectsTitle: "Projects",
+                    aboutTitle: "About",
+                    experienceTitle: "Experience",
                     fundflowDescription: "This will be the description for Fundflow",
                 }
             },
@@ -26,6 +28,8 @@ i18next
                     introButtonMobile: "Toca la flecha",
                     downloadCV: "Descargar CV",
                     projectsTitle: "Proyectos",
+                    aboutTitle: "Sobre mí",
+                    experienceTitle: "Experiencia",
                     fundflowDescription: "Esta será la descripción de Fundflow",
                 }
             },
@@ -36,6 +40,8 @@ i18next
                     introButtonMobile: "Toca la fletxa",
                     downloadCV: "Descarregar CV",
                     projectsTitle: "Projectes",
+                    aboutTitle: "Sobre mi",
+                    experienceTitle: "Experiència",
                     fundflowDescription: "Aquesta serà la descripció de Fundflow",
                 }
             }
