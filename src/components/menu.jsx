@@ -6,48 +6,6 @@ import DownloadCVDark from "../assets/icons/DownloadCVDark.svg";
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-function goHome() {
-    const intro = document.getElementById('intro');
-    const content = document.getElementById('content');
-    const menu = document.getElementById('menu');
-    const nav = document.getElementById('nav');
-    const bgDark = document.getElementById('bgDark');
-    const bgLight = document.getElementById('bgLight');
-    const arrowDown = document.getElementById('arrowDown');
-
-    content.classList.add('transition-down');
-    setTimeout(() => {
-        content.classList.add('hidden');
-        document.getElementById('gridTiles').children[0].classList.remove('fade-left');
-        document.getElementById('gridTiles').children[1].classList.remove('fade-left');
-        document.getElementById('gridTiles').children[2].classList.remove('fade-left');
-        document.getElementById('gridTiles').children[3].classList.remove('fade-left');
-        document.getElementById('gridTiles').children[4].classList.remove('fade-left');
-        document.getElementById('gridTiles').children[5].classList.remove('fade-left');
-    }, 400);
-    setTimeout(() => {
-        bgDark.classList.remove('hidden');
-        bgLight.classList.remove('hidden');
-        menu.classList.add('opacity-0');
-        nav.classList.add('opacity-0');
-        setTimeout(() => {
-            bgDark.classList.add('dark:opacity-5');
-            bgLight.classList.add('opacity-40');
-            intro.classList.remove('hidden');
-            arrowDown.classList.remove('hidden');
-            menu.classList.add('hidden');
-            nav.classList.add('hidden');
-            setTimeout(() => {
-                intro.classList.remove('opacity-0');
-                arrowDown.classList.remove('opacity-0');
-                content.classList.remove('transition-down');
-                content.classList.add('opacity-0');
-                addEventListener('wheel', scrollDown);
-            }, 800);
-        }, 400);
-    }, 800);
-}
-
 function cvDownload() {
     if (i18n.language === 'en' || i18n.language === 'en-US') {
         window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', '_blank');
@@ -58,9 +16,52 @@ function cvDownload() {
     }
 }
 
-function Menu({ darkMode }) {
+function Menu({ darkMode, setScrollActive }) {
     const { t } = useTranslation();
     const screenWidth = window.innerWidth;
+    
+    function goHome() {
+        setScrollActive(true);
+        const intro = document.getElementById('intro');
+        const content = document.getElementById('content');
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('nav');
+        const bgDark = document.getElementById('bgDark');
+        const bgLight = document.getElementById('bgLight');
+        const arrowDown = document.getElementById('arrowDown');
+    
+        content.classList.add('transition-down');
+        setTimeout(() => {
+            content.classList.add('hidden');
+            document.getElementById('gridTiles').children[0].classList.remove('fade-left');
+            document.getElementById('gridTiles').children[1].classList.remove('fade-left');
+            document.getElementById('gridTiles').children[2].classList.remove('fade-left');
+            document.getElementById('gridTiles').children[3].classList.remove('fade-left');
+            document.getElementById('gridTiles').children[4].classList.remove('fade-left');
+            document.getElementById('gridTiles').children[5].classList.remove('fade-left');
+        }, 400);
+        setTimeout(() => {
+            bgDark.classList.remove('hidden');
+            bgLight.classList.remove('hidden');
+            menu.classList.add('opacity-0');
+            nav.classList.add('opacity-0');
+            setTimeout(() => {
+                bgDark.classList.add('dark:opacity-5');
+                bgLight.classList.add('opacity-40');
+                intro.classList.remove('hidden');
+                arrowDown.classList.remove('hidden');
+                menu.classList.add('hidden');
+                nav.classList.add('hidden');
+                setTimeout(() => {
+                    intro.classList.remove('opacity-0');
+                    arrowDown.classList.remove('opacity-0');
+                    content.classList.remove('transition-down');
+                    content.classList.add('opacity-0');
+                }, 800);
+            }, 400);
+        }, 800);
+    }
+
     return (
         <div className="flex items-center justify-center relative">
             <button onClick={goHome}>

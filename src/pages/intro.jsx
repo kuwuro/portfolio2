@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import i18n  from 'i18next';
+import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 import ArrowDownDark from '../assets/icons/ArrowDownDark.svg';
 import ArrowDownLight from '../assets/icons/ArrowDownLight.svg';
@@ -20,14 +20,19 @@ function downloadCV() {
   }
 }
 
-function Intro({ darkMode, setCurrentTab }) {
+function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
+  useEffect(() => {
+      if (scrollActive) {
+        console.log('scrollActive');
+        window.addEventListener('wheel', scrollDown, true);
+      } else {
+        console.log('scrollInactive');
+        window.removeEventListener('wheel', scrollDown, true);
+      }
+  }, [scrollActive]);
+
   const { t } = useTranslation();
   const [titleHtml, setTitleHtml] = useState('');
-
-  function scrollDown(event) {
-    event.deltaY > 0 && transitionDown();
-  }
-  addEventListener('wheel', scrollDown);
 
   useEffect(() => {
     const updateTitle = () => {
@@ -48,18 +53,29 @@ function Intro({ darkMode, setCurrentTab }) {
     updateTitle();
     window.addEventListener('resize', updateTitle);
     return () => window.removeEventListener('resize', updateTitle);
-  }, []);
+  }, []); 
+  
+  function scrollDown(event) {
+    if (event.deltaY > 0) {
+      transitionDown();
+    }
+  }
 
   function transitionDown() {
-    removeEventListener('wheel', scrollDown);
+    setScrollActive(false);
+    if (scrollActive) {
+      window.removeEventListener('wheel', scrollDown, true);
+    }
     const arrowDown = document.getElementById('arrowDown');
     const intro = document.getElementById('intro');
     intro.classList.add('transition-up');
     setCurrentTab('projects');
+
     setTimeout(() => {
       intro.classList.add('hidden');
       intro.classList.add('opacity-0');
     }, 400);
+
     setTimeout(() => {
       arrowDown.classList.add('hidden');
       document.getElementById('content').classList.remove('hidden');
@@ -88,6 +104,17 @@ function Intro({ darkMode, setCurrentTab }) {
         document.getElementById('gridTiles').children[5].classList.add('fade-left');
       }, 700);
     }, 700);
+  }
+
+  function throttle(func, delay) {
+    let lastTime = 0;
+    return function (...args) {
+      const now = new Date().getTime();
+      if (now - lastTime >= delay) {
+        func.apply(this, args);
+        lastTime = now;
+      }
+    };
   }
 
   return (

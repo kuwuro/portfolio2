@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './index.css'
 import Intro from './pages/intro'
 import Content from './pages/content'
@@ -77,6 +77,8 @@ function createClickRipple(x, y, isRandom = false) {
 }
 
 function App() {
+  const [scrollActive, setScrollActive] = useState(true);
+
   const screenWidth = window.innerWidth;
   const [currentTab, setCurrentTab] = useState('');
 
@@ -163,7 +165,7 @@ function App() {
         <img src={BackgroundDark} alt='Background' className='h-500 w-500 object-cover'/>
       </div>
       <div id='menu' className='fixed top-0 left-0 lg:m-12 m-8 hidden opacity-0 transition duration-500 z-50'>
-        <Menu darkMode={darkMode}/>
+        <Menu darkMode={darkMode} setScrollActive={setScrollActive} scrollActive={scrollActive}/>
       </div>
       {screenWidth >= 1080 ? (
         <div id='nav' className='fixed top-0 right-1/2 hidden opacity-0 transition duration-500 translate-x-1/2 my-11 z-40'>
@@ -178,7 +180,7 @@ function App() {
         <Settings darkModeHandler={darkModeHandler} darkMode={darkMode}/>
       </div>
       <div id="intro" className='lg:opacity-0 transition h-full w-full flex flex-col justify-center items-center duration-500 z-10'>
-        <Intro darkMode={darkMode} setCurrentTab={setCurrentTab}/>
+        <Intro darkMode={darkMode} setCurrentTab={setCurrentTab} setScrollActive={setScrollActive} scrollActive={scrollActive}/>
       </div>
       <div id="content" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
         <Content darkMode={darkMode} currentTab={currentTab} setCurrentTab={setCurrentTab}/>
