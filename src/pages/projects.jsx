@@ -10,7 +10,7 @@ const projects = [
         description: 'fundflowDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/fundflow/fundflowPC.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/fundflow/fundflowMobile.png",
-        link: 'project1Link',
+        link: 'https://fundflow.arcedo.dev',
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
@@ -20,47 +20,37 @@ const projects = [
         description: 'project2Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png",
-        link: 'project2Link',
+        link: 'https://kuwuro.github.io/deltashop/',
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
         animationDelay: '0.5s',
-        animDelayMobile: '0.3s',
+        animDelayMobile: '0.4s',
         title: 'Desktopfolio',
         description: 'project3Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioPC1.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioMobile.png",
-        link: 'project3Link',
+        link: 'https://portfolio-desktop-navy.vercel.app',
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
         animationDelay: '0.3s',
-        animDelayMobile: '0.4s',
+        animDelayMobile: '0.5s',
         title: 'Delta Bark\'s',
         description: 'project4Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png",
-        link: 'project4Link',
-        tech: ['tech1', 'tech2', 'tech3']
-    },
-    {
-        animationDelay: '0.6s',
-        animDelayMobile: '0.5s',
-        title: 'Psycomputers',
-        description: 'project5Description',
-        coverPC: 'https://www.enricarmengol.com/projectPictures/psycomputers/psycomputersPC.png',
-        coverMobile: "https://www.enricarmengol.com/projectPictures/psycomputers/psycomputersMobile2.png",
-        link: 'project5Link',
+        link: 'https://deltabarks.com',
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
         animationDelay: '0.4s',
-        animDelayMobile: '0.6s',
+        animDelayMobile: '0.3s',
         title: 'Can Mauri',
         description: 'project6Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/canmauri/canmauriPC1.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/canmauri/canmauriMobile1.png",
-        link: 'project6Link',
+        link: 'https://canmauri.com',
         tech: ['tech1', 'tech2', 'tech3']
     }
 ];
@@ -73,11 +63,10 @@ function Projects({ darkMode }) {
             <h1 className="lg:text-5xl text-4xl font-poppins dark:text-white">{t('projectsTitle')}</h1>
             <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:overflow-visible overflow-auto overflow-x-hidden lg:mb-0 mb-8" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
                 <ProjectTile project={projects[0]} gridCols={2} gridRows={5}/>
-                <ProjectTile project={projects[1]} gridCols={2} gridRows={2}/>
+                <ProjectTile project={projects[1]} gridCols={2} gridRows={3}/>
+                <ProjectTile project={projects[4]} gridCols={2} gridRows={2}/>
                 <ProjectTile project={projects[2]} gridCols={2} gridRows={3}/>
                 <ProjectTile project={projects[3]} gridCols={2} gridRows={2}/>
-                <ProjectTile project={projects[4]} gridCols={2} gridRows={1}/>
-                <ProjectTile project={projects[5]} gridCols={4} gridRows={1}/>
             </div>
         </div>
     );

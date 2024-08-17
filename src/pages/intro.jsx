@@ -101,7 +101,6 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
         document.getElementById('gridTiles').children[2].classList.add('fade-left');
         document.getElementById('gridTiles').children[3].classList.add('fade-left');
         document.getElementById('gridTiles').children[4].classList.add('fade-left');
-        document.getElementById('gridTiles').children[5].classList.add('fade-left');
       }, 700);
     }, 700);
   }

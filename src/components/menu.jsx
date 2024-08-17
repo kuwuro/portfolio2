@@ -38,7 +38,6 @@ function Menu({ darkMode, setScrollActive }) {
             document.getElementById('gridTiles').children[2].classList.remove('fade-left');
             document.getElementById('gridTiles').children[3].classList.remove('fade-left');
             document.getElementById('gridTiles').children[4].classList.remove('fade-left');
-            document.getElementById('gridTiles').children[5].classList.remove('fade-left');
         }, 400);
         setTimeout(() => {
             bgDark.classList.remove('hidden');
