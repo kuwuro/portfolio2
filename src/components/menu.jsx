@@ -3,6 +3,8 @@ import HomeIconDark from "../assets/icons/BxsHomeDark.svg";
 import HomeIconLight from "../assets/icons/BxsHomeLight.svg";
 import DownloadCVLight from "../assets/icons/DownloadCVLight.svg";
 import DownloadCVDark from "../assets/icons/DownloadCVDark.svg";
+import CVDark from '../assets/icons/CvDark.svg';
+import CVLight from '../assets/icons/CvLight.svg';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
@@ -82,9 +84,9 @@ function Menu({ darkMode, setScrollActive }) {
             ) : (
                 <button id="downloadCV" onClick={cvDownload} className="absolute left-16 w-20 hover:scale-105 transition duration-200">
                     {!darkMode ? (
-                        <img src={DownloadCVLight} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
+                        <img src={CVLight} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
                     ) : (
-                        <img src={DownloadCVDark} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
+                        <img src={CVDark} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
                     )}
                 </button>
             )}
