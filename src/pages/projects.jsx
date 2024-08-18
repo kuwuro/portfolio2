@@ -14,8 +14,8 @@ const projects = [
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
-        animationDelay: '0.2s',
-        animDelayMobile: '0.2s',
+        animationDelay: '0.5s',
+        animDelayMobile: '0.4s',
         title: 'DeltaShop',
         description: 'project2Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png',
@@ -24,8 +24,8 @@ const projects = [
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
-        animationDelay: '0.5s',
-        animDelayMobile: '0.4s',
+        animationDelay: '0.2s',
+        animDelayMobile: '0.2s',
         title: 'Desktopfolio',
         description: 'project3Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioPC1.png',
@@ -34,8 +34,8 @@ const projects = [
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
-        animationDelay: '0.3s',
-        animDelayMobile: '0.5s',
+        animationDelay: '0.4s',
+        animDelayMobile: '0.3s',
         title: 'Delta Bark\'s',
         description: 'project4Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png',
@@ -44,8 +44,8 @@ const projects = [
         tech: ['tech1', 'tech2', 'tech3']
     },
     {
-        animationDelay: '0.4s',
-        animDelayMobile: '0.3s',
+        animationDelay: '0.3s',
+        animDelayMobile: '0.5s',
         title: 'Can Mauri',
         description: 'project6Description',
         coverPC: 'https://www.enricarmengol.com/projectPictures/canmauri/canmauriPC1.png',
@@ -63,10 +63,10 @@ function Projects({ darkMode }) {
             <h1 className="lg:text-5xl text-4xl font-poppins dark:text-white">{t('projectsTitle')}</h1>
             <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:overflow-visible overflow-auto overflow-x-hidden lg:mb-0 mb-8" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
                 <ProjectTile project={projects[0]} gridCols={2} gridRows={5}/>
-                <ProjectTile project={projects[1]} gridCols={2} gridRows={3}/>
-                <ProjectTile project={projects[4]} gridCols={2} gridRows={2}/>
                 <ProjectTile project={projects[2]} gridCols={2} gridRows={3}/>
                 <ProjectTile project={projects[3]} gridCols={2} gridRows={2}/>
+                <ProjectTile project={projects[1]} gridCols={2} gridRows={3}/>
+                <ProjectTile project={projects[4]} gridCols={2} gridRows={2}/>
             </div>
         </div>
     );
