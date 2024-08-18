@@ -13,6 +13,8 @@ export default {
         "poppins": ["Poppins", "sans-serif"],
       },
       colors: {
+        "primary": "#8e8eeb",
+        "secondary": "#e3ade9",
         "white": "#fafafa",
         "white10": "#fafafa10",
         "white20": "#fafafa20",

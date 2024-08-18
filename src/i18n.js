@@ -15,10 +15,15 @@ i18next
                     introButton: "Scroll down or click the arrow to begin",
                     introButtonMobile: "Tap the arrow to begin",
                     downloadCV: "Download CV",
+                    visitButton: "Visit",
                     projectsTitle: "Projects",
-                    aboutTitle: "About",
+                    aboutTitle: "About me",
                     experienceTitle: "Experience",
                     fundflowDescription: "This will be the description for Fundflow",
+                    desktopfolioDescription: "This will be the description for Desktopfolio",
+                    deltashopDescription: "This will be the description for DeltaShop",
+                    deltabarksDescription: "This will be the description for Delta Bark's",
+                    canmauriDescription: "This will be the description for Can Mauri",
                 }
             },
             es: {
@@ -27,10 +32,15 @@ i18next
                     introButton: "Haz scroll hacia abajo o haz click en la flecha para empezar",
                     introButtonMobile: "Toca la flecha para empezar",
                     downloadCV: "Descargar CV",
+                    visitButton: "Visitar",
                     projectsTitle: "Proyectos",
                     aboutTitle: "Sobre mí",
                     experienceTitle: "Experiencia",
                     fundflowDescription: "Esta será la descripción de Fundflow",
+                    desktopfolioDescription: "Esta será la descripción de Desktopfolio",
+                    deltashopDescription: "Esta será la descripción de DeltaShop",
+                    deltabarksDescription: "Esta será la descripción de Delta Bark's",
+                    canmauriDescription: "Esta será la descripción de Can Mauri",
                 }
             },
             ca: {
@@ -39,10 +49,15 @@ i18next
                     introButton: "Fes scroll cap avall o clica la fletxa per començar",
                     introButtonMobile: "Toca la fletxa per començar",
                     downloadCV: "Descarregar CV",
+                    visitButton: "Visitar",
                     projectsTitle: "Projectes",
                     aboutTitle: "Sobre mi",
                     experienceTitle: "Experiència",
                     fundflowDescription: "Aquesta serà la descripció de Fundflow",
+                    desktopfolioDescription: "Aquesta serà la descripció de Desktopfolio",
+                    deltashopDescription: "Aquesta serà la descripció de DeltaShop",
+                    deltabarksDescription: "Aquesta serà la descripció de Delta Bark's",
+                    canmauriDescription: "Aquesta serà la descripció de Can Mauri",
                 }
             }
         }

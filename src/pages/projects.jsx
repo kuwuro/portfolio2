@@ -11,47 +11,50 @@ const projects = [
         coverPC: 'https://www.enricarmengol.com/projectPictures/fundflow/fundflowPC.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/fundflow/fundflowMobile.png",
         link: 'https://fundflow.arcedo.dev',
-        tech: ['tech1', 'tech2', 'tech3']
+        tech: ['React', 'TailwindCSS', 'Node.js', 'Express'],
+        github: 'https://github.com/kuwuro/fundflow-Frontend'
     },
     {
         animationDelay: '0.5s',
         animDelayMobile: '0.4s',
         title: 'DeltaShop',
-        description: 'project2Description',
+        description: 'deltashopDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png",
         link: 'https://kuwuro.github.io/deltashop/',
-        tech: ['tech1', 'tech2', 'tech3']
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        github: 'https://github.com/kuwuro/deltashop'
     },
     {
         animationDelay: '0.2s',
         animDelayMobile: '0.2s',
         title: 'Desktopfolio',
-        description: 'project3Description',
+        description: 'desktopfolioDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioPC1.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioMobile.png",
         link: 'https://portfolio-desktop-navy.vercel.app',
-        tech: ['tech1', 'tech2', 'tech3']
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        github: 'https://github.com/kuwuro/portfolioDesktop'
     },
     {
         animationDelay: '0.4s',
         animDelayMobile: '0.3s',
         title: 'Delta Bark\'s',
-        description: 'project4Description',
+        description: 'deltabarksDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png",
         link: 'https://deltabarks.com',
-        tech: ['tech1', 'tech2', 'tech3']
+        tech: ['WordPress', 'PHP', 'MySQL']
     },
     {
         animationDelay: '0.3s',
         animDelayMobile: '0.5s',
         title: 'Can Mauri',
-        description: 'project6Description',
+        description: 'canmauriDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/canmauri/canmauriPC1.png',
         coverMobile: "https://www.enricarmengol.com/projectPictures/canmauri/canmauriMobile1.png",
         link: 'https://canmauri.com',
-        tech: ['tech1', 'tech2', 'tech3']
+        tech: ['WordPress', 'PHP', 'MySQL']
     }
 ];
 
@@ -59,7 +62,7 @@ function Projects({ darkMode }) {
     const screenWidth = window.innerWidth;
     const { t } = useTranslation();
     return (
-        <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start" style={{ height: `${screenWidth < 1080 ? '73vh' : '80vh'}` }}>
+        <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start" style={{ height: `${screenWidth < 1080 ? '73vh' : '77vh'}` }}>
             <h1 className="lg:text-5xl text-4xl font-poppins dark:text-white">{t('projectsTitle')}</h1>
             <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:overflow-visible overflow-auto overflow-x-hidden lg:mb-0 mb-8" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
                 <ProjectTile project={projects[0]} gridCols={2} gridRows={5}/>

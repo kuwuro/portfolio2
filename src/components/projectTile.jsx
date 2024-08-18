@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ProjectModal from "./projectModal.jsx";
 import LinkArrow from "../assets/icons/LinkArrow.svg";
+import GithubDark from "../assets/icons/GithubDark.svg";
 import { useTranslation } from "react-i18next";
 
 function ProjectTile({ project, gridCols, gridRows }) {
@@ -21,6 +22,11 @@ function ProjectTile({ project, gridCols, gridRows }) {
         setModalOpen(false);
     };
 
+    const openGithubRep = (event) => {
+        event.stopPropagation();
+        window.open(project.github, '_blank');
+    };
+
     const gridStyle = window.innerWidth >= 1080 ? {
         gridColumn: `span ${gridCols}`,
         gridRow: `span ${gridRows}`
@@ -37,13 +43,18 @@ function ProjectTile({ project, gridCols, gridRows }) {
                 <img src={LinkArrow} alt="Link Arrow" className="h-10 w-10 absolute top-3 right-3 transform -translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300"/>
                 <div className="absolute bottom-3 left-3 translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300">
                     <h1 className="text-3xl font-poppins text-white">{project.title}</h1>
-                    <p className="text-md text-white">{t(project.description)}</p>
-                    <div className="flex gap-2">
+                    <p className="text-md font-dmsans text-white">{t(project.description)}</p>
+                    <div className="flex gap-2 mt-1.5">
                         {project.tech.map((tech, index) => (
-                            <p key={index} className="text-sm text-black bg-gray-200 px-2 py-1 rounded-lg">{tech}</p>
+                            <p key={index} className="text-sm font-semibold font-dmsans text-black bg-gray-200 px-2.5 py-1.5 rounded-3xl">{tech}</p>
                         ))}
                     </div>
                 </div>
+                {project.github &&
+                <button onClick={openGithubRep} className="">
+                    <img src={GithubDark} alt="Github" className="h-10 w-10 absolute bottom-3 right-3 transform hover:scale-[1.15] translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300"/>
+                </button>                
+                }
             </>
             }
         </div>
