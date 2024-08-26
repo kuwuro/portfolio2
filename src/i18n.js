@@ -23,7 +23,7 @@ i18next
                     desktopfolioDescription: "My personal portfolio, in an old desktop's style.\nInspired by Windows 95 and 98.",
                     deltashopDescription: "An educational activity website where I learned to use arrays and eventListeners, among other things.\nInspired in Undertale, a game by Toby Fox.",
                     deltabarksDescription: "Website made for a small business that sells dog collars and related products.",
-                    canmauriDescription: "Website made for a restaurant that organizes events and weddings. Made during my internship at a web development company.",
+                    canmauriDescription: "Website made for a restaurant that organizes events and weddings. Made during my internship at a marketing company.",
                 }
             },
             es: {
@@ -40,7 +40,7 @@ i18next
                     desktopfolioDescription: "Mi portfolio personal, en el estilo de un escritorio antiguo.\nInspirado en Windows 95 y 98.",
                     deltashopDescription: "Web de actividad educativa donde aprendí a usar arrays y eventListeners, entre otras cosas.\nInspirado en Undertale, un juego de Toby Fox.",
                     deltabarksDescription: "Página web hecha para un pequeño negocio que vende collares para perros y productos relacionados.",
-                    canmauriDescription: "Página web hecha para un restaurante que organiza eventos y bodas. Hecha durante mis prácticas en una empresa de desarrollo web.",
+                    canmauriDescription: "Página web hecha para un restaurante que organiza eventos y bodas. Hecha durante mis prácticas en una empresa de marketing.",
                 }
             },
             ca: {
@@ -57,7 +57,7 @@ i18next
                     desktopfolioDescription: "El meu portfolio personal, en l'estil d'un escriptori antic.\nInspirat en Windows 95 i 98.",
                     deltashopDescription: "Web d'activitat educativa on vaig aprendre a fer servir arrays i eventListeners, entre altres coses.\nInspirat en Undertale, un joc de Toby Fox.",
                     deltabarksDescription: "Pàgina web feta per a un petit negoci que ven collars per a gossos i productes relacionats.",
-                    canmauriDescription: "Pàgina web feta per a un restaurant que organitza esdeveniments i casaments. Feta durant les meves pràctiques en una empresa de desenvolupament web.",
+                    canmauriDescription: "Pàgina web feta per a un restaurant que organitza esdeveniments i casaments. Feta durant les meves pràctiques en una empresa de màrqueting.",
                 }
             }
         }
