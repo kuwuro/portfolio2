@@ -41,9 +41,9 @@ function ProjectTile({ project, gridCols, gridRows }) {
             {screenWidth >= 1080 &&
             <>
                 <img src={LinkArrow} alt="Link Arrow" className="h-10 w-10 absolute top-3 right-3 transform -translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300"/>
-                <div className="absolute bottom-3 left-3 translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300">
+                <div className="absolute bottom-3 left-3 translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 w-full">
                     <h1 className="text-3xl font-poppins text-white">{project.title}</h1>
-                    <p className="text-md font-dmsans text-white">{t(project.description)}</p>
+                    <p className="text-md font-dmsans w-10/12 text-white whitespace-pre-line">{t(project.description)}</p>
                     <div className="flex gap-2 mt-1.5">
                         {project.tech.map((tech, index) => (
                             <p key={index} className="text-sm font-semibold font-dmsans text-black bg-gray-200 px-2.5 py-1.5 rounded-3xl">{tech}</p>

@@ -19,11 +19,11 @@ i18next
                     projectsTitle: "Projects",
                     aboutTitle: "About me",
                     experienceTitle: "Experience",
-                    fundflowDescription: "This will be the description for Fundflow",
-                    desktopfolioDescription: "This will be the description for Desktopfolio",
-                    deltashopDescription: "This will be the description for DeltaShop",
-                    deltabarksDescription: "This will be the description for Delta Bark's",
-                    canmauriDescription: "This will be the description for Can Mauri",
+                    fundflowDescription: "A crowdfunding platform for everyone to fund their own projects. Made as my degree's final project.",
+                    desktopfolioDescription: "My personal portfolio, in an old desktop's style.\nInspired by Windows 95 and 98.",
+                    deltashopDescription: "An educational activity website where I learned to use arrays and eventListeners, among other things.\nInspired in Undertale, a game by Toby Fox.",
+                    deltabarksDescription: "Website made for a small business that sells dog collars and related products.",
+                    canmauriDescription: "Website made for a restaurant that organizes events and weddings. Made during my internship at a web development company.",
                 }
             },
             es: {
@@ -36,11 +36,11 @@ i18next
                     projectsTitle: "Proyectos",
                     aboutTitle: "Sobre mí",
                     experienceTitle: "Experiencia",
-                    fundflowDescription: "Esta será la descripción de Fundflow",
-                    desktopfolioDescription: "Esta será la descripción de Desktopfolio",
-                    deltashopDescription: "Esta será la descripción de DeltaShop",
-                    deltabarksDescription: "Esta será la descripción de Delta Bark's",
-                    canmauriDescription: "Esta será la descripción de Can Mauri",
+                    fundflowDescription: "Una plataforma de crowdfunding donde todo el mundo puede financiar sus propios proyectos. Hecho como proyecto final de mi grado.",
+                    desktopfolioDescription: "Mi portfolio personal, en el estilo de un escritorio antiguo.\nInspirado en Windows 95 y 98.",
+                    deltashopDescription: "Web de actividad educativa donde aprendí a usar arrays y eventListeners, entre otras cosas.\nInspirado en Undertale, un juego de Toby Fox.",
+                    deltabarksDescription: "Página web hecha para un pequeño negocio que vende collares para perros y productos relacionados.",
+                    canmauriDescription: "Página web hecha para un restaurante que organiza eventos y bodas. Hecha durante mis prácticas en una empresa de desarrollo web.",
                 }
             },
             ca: {
@@ -53,11 +53,11 @@ i18next
                     projectsTitle: "Projectes",
                     aboutTitle: "Sobre mi",
                     experienceTitle: "Experiència",
-                    fundflowDescription: "Aquesta serà la descripció de Fundflow",
-                    desktopfolioDescription: "Aquesta serà la descripció de Desktopfolio",
-                    deltashopDescription: "Aquesta serà la descripció de DeltaShop",
-                    deltabarksDescription: "Aquesta serà la descripció de Delta Bark's",
-                    canmauriDescription: "Aquesta serà la descripció de Can Mauri",
+                    fundflowDescription: "Una plataforma de crowdfunding on tothom pot finançar els seus propis projectes. Fet com a projecte final del meu grau.",
+                    desktopfolioDescription: "El meu portfolio personal, en l'estil d'un escriptori antic.\nInspirat en Windows 95 i 98.",
+                    deltashopDescription: "Web d'activitat educativa on vaig aprendre a fer servir arrays i eventListeners, entre altres coses.\nInspirat en Undertale, un joc de Toby Fox.",
+                    deltabarksDescription: "Pàgina web feta per a un petit negoci que ven collars per a gossos i productes relacionats.",
+                    canmauriDescription: "Pàgina web feta per a un restaurant que organitza esdeveniments i casaments. Feta durant les meves pràctiques en una empresa de desenvolupament web.",
                 }
             }
         }
