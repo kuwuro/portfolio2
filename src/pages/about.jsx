@@ -142,7 +142,7 @@ function About({ darkMode }) {
                         </p>
                     </div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-between lg:w-4/5 w-full">
-                        <div id="player" className="mt-4 p-5 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1.1s` : `0.5s` }}>
+                        <div id="player" className="mt-4 px-5 py-4 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1.1s` : `0.5s` }}>
                             {randomSong && (
                                 <>
                                     <div alt={`${randomSong.title} cover`} className="w-16 h-16 rounded-full mr-4 music-spin relative" style={{ backgroundImage: `url(${randomSong.cover})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
