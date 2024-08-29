@@ -38,6 +38,8 @@ body {
   overflow: hidden;
 }
 
+::-webkit-scrollbar { display: none; }
+
 body * {
   @apply transition-colors duration-300;
   @apply transition-opacity duration-300;

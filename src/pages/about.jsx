@@ -7,7 +7,7 @@ function About({ darkMode }) {
     const { t } = useTranslation();
     return (
         <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start overflow-auto" style={{ height: `${screenWidth < 1080 ? '100vh' : '85vh'}` }}>
-            <div className="grid lg:grid-cols-2 w-full lg:h-full lg:mb-0 mb-56">
+            <div className="grid lg:grid-cols-2 w-full lg:h-full lg:mb-0 mb-52">
                 <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 lg:mb-0 mb-2">
                     <div className="lg:w-120 lg:h-120 w-52 h-52 rounded-full waviy border-0 z-20" style={{ backgroundImage: `url(${me})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                     <div className="w-2/5 h-10 bg-black blur-2xl rounded-full z-10"></div>
