@@ -1,6 +1,16 @@
 import React from "react";
 import ProjectTile from "../components/projectTile";
 import { useTranslation } from "react-i18next";
+import fundflowPC from "../assets/media/projectPictures/fundflow/fundflowPC.png";
+import fundflowMobile from "../assets/media/projectPictures/fundflow/fundflowMobile.png";
+import deltashopPC from "../assets/media/projectPictures/deltashop/deltashopMobile1.png";
+import deltashopMobile from "../assets/media/projectPictures/deltashop/deltashopMobile1.png";
+import desktopfolioPC from "../assets/media/projectPictures/desktopfolio/desktopfolioPC1.png";
+import desktopfolioMobile from "../assets/media/projectPictures/desktopfolio/desktopfolioMobile.png";
+import deltabarksPC from "../assets/media/projectPictures/deltabarks/deltabarksPC3.png";
+import deltabarksMobile from "../assets/media/projectPictures/deltabarks/deltabarksPC3.png";
+import canmauriPC from "../assets/media/projectPictures/canmauri/canmauriPC1.png";
+import canmauriMobile from "../assets/media/projectPictures/canmauri/canmauriMobile1.png";
 
 const projects = [
     {
@@ -8,8 +18,8 @@ const projects = [
         animDelayMobile: '0.1s',
         title: 'fundflow',
         description: 'fundflowDescription',
-        coverPC: 'https://www.enricarmengol.com/projectPictures/fundflow/fundflowPC.png',
-        coverMobile: "https://www.enricarmengol.com/projectPictures/fundflow/fundflowMobile.png",
+        coverPC: fundflowPC,
+        coverMobile: fundflowMobile,
         link: 'https://fundflow.arcedo.dev',
         tech: ['React', 'TailwindCSS', 'Node.js', 'Express'],
         github: 'https://github.com/kuwuro/fundflow-Frontend'
@@ -19,8 +29,8 @@ const projects = [
         animDelayMobile: '0.4s',
         title: 'DeltaShop',
         description: 'deltashopDescription',
-        coverPC: 'https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png',
-        coverMobile: "https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png",
+        coverPC: deltashopPC,
+        coverMobile: deltashopMobile,
         link: 'https://kuwuro.github.io/deltashop/',
         tech: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/kuwuro/deltashop'
@@ -30,8 +40,8 @@ const projects = [
         animDelayMobile: '0.2s',
         title: 'Desktopfolio',
         description: 'desktopfolioDescription',
-        coverPC: 'https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioPC1.png',
-        coverMobile: "https://www.enricarmengol.com/projectPictures/desktopfolio/desktopfolioMobile.png",
+        coverPC: desktopfolioPC,
+        coverMobile: desktopfolioMobile,
         link: 'https://portfolio-desktop-navy.vercel.app',
         tech: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/kuwuro/portfolioDesktop'
@@ -41,8 +51,8 @@ const projects = [
         animDelayMobile: '0.3s',
         title: 'Delta Bark\'s',
         description: 'deltabarksDescription',
-        coverPC: 'https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png',
-        coverMobile: "https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png",
+        coverPC: deltabarksPC,
+        coverMobile: deltabarksMobile,
         link: 'https://deltabarks.com',
         tech: ['WordPress', 'PHP', 'MySQL']
     },
@@ -51,8 +61,8 @@ const projects = [
         animDelayMobile: '0.5s',
         title: 'Can Mauri',
         description: 'canmauriDescription',
-        coverPC: 'https://www.enricarmengol.com/projectPictures/canmauri/canmauriPC1.png',
-        coverMobile: "https://www.enricarmengol.com/projectPictures/canmauri/canmauriMobile1.png",
+        coverPC: canmauriPC,
+        coverMobile: canmauriMobile,
         link: 'https://canmauri.com',
         tech: ['WordPress', 'PHP', 'MySQL']
     }

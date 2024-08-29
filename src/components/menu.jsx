@@ -5,16 +5,19 @@ import DownloadCVLight from "../assets/icons/DownloadCVLight.svg";
 import DownloadCVDark from "../assets/icons/DownloadCVDark.svg";
 import CVDark from '../assets/icons/CvDark.svg';
 import CVLight from '../assets/icons/CvLight.svg';
+import cvENG from '../assets/media/cvs/CVEnricArmengolENG.pdf';
+import cvESP from '../assets/media/cvs/CVEnricArmengolESP.pdf';
+import cvCAT from '../assets/media/cvs/CVEnricArmengolCAT.pdf';
 import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 function cvDownload() {
     if (i18n.language === 'en' || i18n.language === 'en-US') {
-        window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', '_blank');
+        window.open(cvENG, 'mozillaTab');
     } else if (i18n.language === 'es') {
-        window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', '_blank');
+        window.open(cvESP, 'mozillaTab');
     } else if (i18n.language === 'ca') {
-        window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolCAT.pdf', '_blank');
+        window.open(cvCAT, 'mozillaTab');
     }
 }
 

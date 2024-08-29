@@ -9,14 +9,17 @@ import LinkedinDark from '../assets/icons/LinkedinDark.svg';
 import LinkedinLight from '../assets/icons/LinkedinLight.svg';
 import DownloadCVDark from '../assets/icons/CvDark.svg';
 import DownloadCVLight from '../assets/icons/CvLight.svg';
+import cvENG from '../assets/media/cvs/CVEnricArmengolENG.pdf';
+import cvESP from '../assets/media/cvs/CVEnricArmengolESP.pdf';
+import cvCAT from '../assets/media/cvs/CVEnricArmengolCAT.pdf';
 
 function downloadCV() {
   if (i18n.language === 'en' || i18n.language === 'en-US') {
-      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolENG.pdf', 'mozillaTab');
+      window.open(cvENG, 'mozillaTab');
   } else if (i18n.language === 'es') {
-      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolESP.pdf', 'mozillaTab');
+      window.open(cvESP, 'mozillaTab');
   } else if (i18n.language === 'ca') {
-      window.open('https://www.enricarmengol.com/cvs/CVEnricArmengolCAT.pdf', 'mozillaTab');
+      window.open(cvCAT, 'mozillaTab');
   }
 }
 
