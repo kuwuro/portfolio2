@@ -16,7 +16,7 @@ const projects = [
     },
     {
         animationDelay: '0.5s',
-        animDelayMobile: '0.4s',
+        animDelayMobile: '0.3s',
         title: 'DeltaShop',
         description: 'deltashopDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltashop/deltashopMobile1.png',
@@ -38,7 +38,7 @@ const projects = [
     },
     {
         animationDelay: '0.4s',
-        animDelayMobile: '0.3s',
+        animDelayMobile: '0.4s',
         title: 'Delta Bark\'s',
         description: 'deltabarksDescription',
         coverPC: 'https://www.enricarmengol.com/projectPictures/deltabarks/deltabarksPC3.png',
@@ -67,9 +67,19 @@ function Projects({ darkMode }) {
             <div id="gridTiles" className="grid lg:grid-rows-5 grid-cols-1 lg:grid-cols-6 gap-3 w-full lg:mb-0 mb-52" style={{ height: `${window.innerWidth < 1080 ? 'auto' : '75vh'}` }}>
                 <ProjectTile project={projects[0]} gridCols={2} gridRows={5}/>
                 <ProjectTile project={projects[2]} gridCols={2} gridRows={3}/>
-                <ProjectTile project={projects[3]} gridCols={2} gridRows={2}/>
-                <ProjectTile project={projects[1]} gridCols={2} gridRows={3}/>
-                <ProjectTile project={projects[4]} gridCols={2} gridRows={2}/>
+                {(screenWidth >= 1080) ? (
+                    <>
+                        <ProjectTile project={projects[3]} gridCols={2} gridRows={2}/>
+                        <ProjectTile project={projects[1]} gridCols={2} gridRows={3}/>
+                        <ProjectTile project={projects[4]} gridCols={2} gridRows={2}/>
+                    </>
+                ) : (
+                    <>
+                        <ProjectTile project={projects[1]} gridCols={2} gridRows={3}/>
+                        <ProjectTile project={projects[3]} gridCols={2} gridRows={2}/>
+                        <ProjectTile project={projects[4]} gridCols={2} gridRows={2}/>
+                    </>
+                )}
             </div>
         </div>
     );
