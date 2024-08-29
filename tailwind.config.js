@@ -26,9 +26,11 @@ export default {
       },
       height: {
         "500": "200vh",
+        "120": "30rem",
       },
       width: {
         "500": "200vw",
+        "120": "30rem",
       },
     },
   },
