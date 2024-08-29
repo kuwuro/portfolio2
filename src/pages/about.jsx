@@ -1,4 +1,8 @@
 import React from "react";
+import mii1 from "../assets/media/mii1.png";
+import mii2 from "../assets/media/mii2.png";
+import mii3 from "../assets/media/mii3.png";
+import mii4 from "../assets/media/mii4.png";
 import { useTranslation } from "react-i18next";
 
 function About({ darkMode }) {
@@ -11,8 +15,15 @@ function About({ darkMode }) {
                 <div className="flex justify-center items-center">
                     <p className="font-dmsans dark:text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas non nemo voluptatum ipsa cupiditate porro vero. Laboriosam fuga tempore harum deserunt, consequuntur vitae, atque quos asperiores dolorem provident expedita assumenda.</p>
                 </div>
-                <div className="flex justify-center items-center lg:order-last order-first">
-                    <div className="w-32 h-32 bg-white fade-up-flip">this is a test</div>
+                <div className="flex justify-center items-center lg:order-last order-first lg:gap-8 gap-2 lg:mb-0 mb-4">
+                    <div className="flex lg:flex-col lg:gap-8 gap-2">
+                        <div className="lg:w-52 lg:h-52 w-20 h-20 bg-cover bg-center fade-up-flip rounded-full " style={{backgroundImage: `url(${mii1})`, animationDelay: `0.1s` }}></div>
+                        <div className="lg:w-52 lg:h-52 w-20 h-20 bg-cover bg-center fade-up-flip rounded-full " style={{backgroundImage: `url(${mii2})`, animationDelay: `0.2s` }}></div>
+                    </div>
+                    <div className="flex lg:flex-col lg:gap-8 gap-2">
+                        <div className="lg:w-52 lg:h-52 w-20 h-20 bg-cover bg-center fade-up-flip rounded-full " style={{backgroundImage: `url(${mii3})`, animationDelay: `0.3s` }}></div>
+                        <div className="lg:w-52 lg:h-52 w-20 h-20 bg-cover bg-center fade-up-flip rounded-full " style={{backgroundImage: `url(${mii4})`, animationDelay: `0.4s` }}></div>
+                    </div>
                 </div>
             </div>
         </div>
