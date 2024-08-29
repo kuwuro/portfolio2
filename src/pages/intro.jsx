@@ -23,10 +23,10 @@ function downloadCV() {
 function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
   useEffect(() => {
       if (scrollActive) {
-        console.log('scrollActive');
+        // console.log('scrollActive');
         window.addEventListener('wheel', scrollDown, true);
       } else {
-        console.log('scrollInactive');
+        // console.log('scrollInactive');
         window.removeEventListener('wheel', scrollDown, true);
       }
   }, [scrollActive]);
