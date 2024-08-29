@@ -272,6 +272,21 @@ body * {
   }
 }
 
+.fade-up-text {
+  animation: fade-up-text 1s cubic-bezier(.02,1.06,.67,.99) both;
+}
+
+@keyframes fade-up-text {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .fade-up-flip {
   animation: fade-up-flip 1.5s cubic-bezier(.02,1.06,.67,.99) both;
 }
