@@ -27,7 +27,8 @@ i18next
                     "aboutMe": {
                         "part1": "I'm a recent graduate of a <1>{{bold1ENG}}</1>, with a solid technical background and a passion for web design and development. I mainly have a focus on <1>{{bold2ENG}}</1>, but my goal is to expand my knowledge to fullstack.",
                         "part2": "I've been making websites since I was 16, and this experience has helped shaping what I enjoy. I've learned that putting <1>{{bold3ENG}}</1> into my projects makes them truly shine, and that's what drives me to improve and thrive in my work.",
-                        "part3": "I love cats, retro aesthetics and old internet culture! When I'm not working, I spend most of my time playing videogames, watching movies, going out with friends and investigating new tools to work with, to then include them in my daily workflow."
+                        "part3": "I love cats, retro aesthetics and old internet culture! When I'm not working, I spend most of my time playing videogames, watching movies, going out with friends and investigating new tools to work with, to then include them in my daily workflow.",
+                        "part4": "If you want to get in touch with me, feel free to send me an email at: <1>{{email}}</1>."
                     }
                 }
             },
@@ -49,7 +50,8 @@ i18next
                     "aboutMe": {
                         "part1": "Soy recién graduado de <1>{{bold1ESP}}</1>, con una sólida formación técnica y pasión por el diseño y desarrollo web. Principalmente tengo un enfoque en <1>{{bold2ESP}}</1>, pero mi objetivo es expandir mis conocimientos al fullstack.",
                         "part2": "He estado haciendo páginas web desde los 16 años, y esta experiencia ha ayudado a definir lo que disfruto. He aprendido que los <1>{{bold3ESP}}</1> por mis proyectos los hace brillar de verdad, y eso es lo que me impulsa a mejorar y prosperar en mi trabajo.",
-                        "part3": "¡Me encantan los gatos, la estética retro y la cultura antigua de internet! Cuando no estoy trabajando, paso la mayor parte de mi tiempo jugando videojuegos, viendo películas, saliendo con amigos e investigando nuevas herramientas con las que trabajar, para luego incluirlas en mi flujo de trabajo diario."
+                        "part3": "¡Me encantan los gatos, la estética retro y la cultura antigua de internet! Cuando no estoy trabajando, paso la mayor parte de mi tiempo jugando videojuegos, viendo películas, saliendo con amigos e investigando nuevas herramientas con las que trabajar, para luego incluirlas en mi flujo de trabajo diario.",
+                        "part4": "Si quieres ponerte en contacto conmigo, no dudes en enviarme un email a: <1>{{email}}</1>."
                     }
                 }
             },
@@ -71,7 +73,8 @@ i18next
                     "aboutMe": {
                         "part1": "Sóc recentment graduat d'un <1>{{bold1CAT}}</1>, amb una sòlida formació tècnica i passió pel disseny i desenvolupament web. Principalment tinc un enfocament en <1>{{bold2CAT}}</1>, però el meu objectiu és expandir els meus coneixements al fullstack.",
                         "part2": "He estat fent pàgines web des dels 16 anys, i aquesta experiència m'ha ajudat a definir el que gaudeixo. He après que els <1>{{bold3CAT}}</1> pels meus projectes els fa brillar de veritat, i això és el que em impulsa a millorar i prosperar en la meva feina.",
-                        "part3": "M'encanten els gats, l'estètica retro i la cultura antiga d'internet! Quan no estic treballant, passo la major part del meu temps jugant a videojocs, veient pel·lícules, sortint amb amics i investigant noves eines amb les quals treballar, per després incloure-les en el meu flux de treball diari."
+                        "part3": "M'encanten els gats, l'estètica retro i la cultura antiga d'internet! Quan no estic treballant, passo la major part del meu temps jugant a videojocs, veient pel·lícules, sortint amb amics i investigant noves eines amb les quals treballar, per després incloure-les en el meu flux de treball diari.",
+                        "part4": "Si vols posar-te en contacte amb mi, no dubtis a enviar-me un email a: <1>{{email}}</1>."
                     }
                     
                 }

@@ -307,3 +307,16 @@ body * {
     opacity: 1;
   }
 }
+
+.music-spin {
+  animation: music-spin 15s linear infinite;
+}
+
+@keyframes music-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
