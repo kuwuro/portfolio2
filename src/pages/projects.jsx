@@ -42,7 +42,7 @@ const projects = [
         description: 'desktopfolioDescription',
         coverPC: desktopfolioPC,
         coverMobile: desktopfolioMobile,
-        link: 'https://portfolio-desktop-navy.vercel.app',
+        link: 'https://desktop.enricarmengol.com',
         tech: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/kuwuro/portfolioDesktop'
     },
