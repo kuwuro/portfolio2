@@ -11,6 +11,7 @@ export default {
         "dmsans": ["DM Sans", "sans-serif"],
         "montserrat": ["Montserrat", "sans-serif"],
         "poppins": ["Poppins", "sans-serif"],
+        "worksans": ["Work Sans", "sans-serif"],
       },
       colors: {
         "primary": "#8e8eeb",

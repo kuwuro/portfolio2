@@ -24,6 +24,9 @@ i18next
                     deltashopDescription: "An educational activity website where I learned to use arrays and eventListeners, among other things.\nInspired in Undertale, a game by Toby Fox.",
                     deltabarksDescription: "Website made for a small business that sells dog collars and related products.",
                     canmauriDescription: "Website made for a restaurant that organizes events and weddings. Made during my internship at a marketing company.",
+                    freelanceDate: "MAY 2021 - PRESENT",
+                    freelance: "Freelance Web Developer",
+                    freelanceText: "Nowadays, I work as a freelance web developer, and I create projects that help me grow and learn new things. I'm always looking for new opportunities to work on, so if you have a project in mind, don't hesitate to contact me.",
                     "aboutMe": {
                         "part1": "I'm a recent graduate of a <1>{{bold1ENG}}</1>, with a solid technical background and a passion for web design and development. I mainly have a focus on <1>{{bold2ENG}}</1>, but my goal is to expand my knowledge to fullstack.",
                         "part2": "I've been making websites since I was 16, and this experience has helped shaping what I enjoy. I've learned that putting <1>{{bold3ENG}}</1> into my projects makes them truly shine, and that's what drives me to improve and thrive in my work.",
@@ -47,6 +50,9 @@ i18next
                     deltashopDescription: "Web de actividad educativa donde aprendí a usar arrays y eventListeners, entre otras cosas.\nInspirado en Undertale, un juego de Toby Fox.",
                     deltabarksDescription: "Página web hecha para un pequeño negocio que vende collares para perros y productos relacionados.",
                     canmauriDescription: "Página web hecha para un restaurante que organiza eventos y bodas. Hecha durante mis prácticas en una empresa de marketing.",
+                    freelanceDate: "MAY 2021 - PRESENTE",
+                    freelance: "Desarrollador Web Freelance",
+                    freelanceText: "Actualmente trabajo como desarrollador web freelance, y creo proyectos que me ayudan a crecer y aprender cosas nuevas. Siempre estoy buscando nuevas oportunidades en las que trabajar, así que si tienes un proyecto en mente, no dudes en contactarme.",
                     "aboutMe": {
                         "part1": "Soy recién graduado de <1>{{bold1ESP}}</1>, con una sólida formación técnica y pasión por el diseño y desarrollo web. Principalmente tengo un enfoque en <1>{{bold2ESP}}</1>, pero mi objetivo es expandir mis conocimientos al fullstack.",
                         "part2": "He estado haciendo páginas web desde los 16 años, y esta experiencia ha ayudado a definir lo que disfruto. He aprendido que los <1>{{bold3ESP}}</1> por mis proyectos los hace brillar de verdad, y eso es lo que me impulsa a mejorar y prosperar en mi trabajo.",
@@ -70,6 +76,9 @@ i18next
                     deltashopDescription: "Web d'activitat educativa on vaig aprendre a fer servir arrays i eventListeners, entre altres coses.\nInspirat en Undertale, un joc de Toby Fox.",
                     deltabarksDescription: "Pàgina web feta per a un petit negoci que ven collars per a gossos i productes relacionats.",
                     canmauriDescription: "Pàgina web feta per a un restaurant que organitza esdeveniments i casaments. Feta durant les meves pràctiques en una empresa de màrqueting.",
+                    freelanceDate: "MAI 2021 - PRESENT",
+                    freelance: "Desenvolupador Web Freelance",
+                    freelanceText: "Actualment treballo com a desenvolupador web freelance, i creo projectes que em ajuden a créixer i aprendre coses noves. Sempre estic buscant noves oportunitats en les quals treballar, així que si tens un projecte en ment, no dubtis a contactar-me.",
                     "aboutMe": {
                         "part1": "Sóc recentment graduat d'un <1>{{bold1CAT}}</1>, amb una sòlida formació tècnica i passió pel disseny i desenvolupament web. Principalment tinc un enfocament en <1>{{bold2CAT}}</1>, però el meu objectiu és expandir els meus coneixements al fullstack.",
                         "part2": "He estat fent pàgines web des dels 16 anys, i aquesta experiència m'ha ajudat a definir el que gaudeixo. He après que els <1>{{bold3CAT}}</1> pels meus projectes els fa brillar de veritat, i això és el que em impulsa a millorar i prosperar en la meva feina.",

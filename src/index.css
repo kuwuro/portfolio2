@@ -263,6 +263,22 @@ body * {
   }
 }
 
+.fade-right {
+  opacity: 0;
+  animation: fade-right 1.5s cubic-bezier(.02,1.06,.67,.99) both;
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .fade-up {
   animation: fade-up 0.8s cubic-bezier(.02,1.06,.67,.99);
 }
@@ -318,5 +334,19 @@ body * {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.extend {
+  animation: extend 1s cubic-bezier(.02,1.06,.67,.99) both;
+  animation-delay: 0.3s;
+}
+
+@keyframes extend {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
   }
 }

@@ -101,7 +101,7 @@ function About({ darkMode }) {
                     <div className="w-2/5 h-10 bg-black blur-2xl rounded-full z-10"></div>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-2 lg:-ml-20 -ml-0 lg:mb-8 mb-0 w-full">
-                    <div>
+                    <div className="flex flex-col gap-2">
                         <h2 className="lg:text-7xl text-4xl font-poppins dark:text-white fade-up-text mb-2 lg:-ml-1" style={{ animationDelay: (screenWidth <= 1080) ? `0.3s` : `0s` }}>ENRIC ARMENGOL</h2>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-4/5 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.4s` : `0.1s` }}>
                             <Trans
