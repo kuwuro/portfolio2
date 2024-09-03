@@ -16,7 +16,7 @@ function ProjectModal({ project, onClose, screenWidth }) {
     const { t } = useTranslation();
     return (
         <Modal onClose={onClose}>
-            {(screenWidth <= 600) ? (
+            {(screenWidth <= 1080) ? (
                 <div className="flex flex-col gap-5 w-auto">
                     <h1 className="text-3xl font-poppins dark:text-white">{project.title}</h1>
                     <div className="w-full h-40 bg-cover bg-center rounded-lg shadow-xl" style={{ backgroundImage: `url(${project.coverMobile})`}}></div>
