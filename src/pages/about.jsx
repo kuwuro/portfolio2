@@ -95,15 +95,15 @@ function About({ darkMode }) {
     }, []);
     return (
         <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start overflow-auto" style={{ height: `${screenWidth < 1080 ? '100vh' : '85vh'}` }}>
-            <div className="grid lg:grid-cols-2 w-full lg:h-full lg:mb-0 mb-72">
+            <div className="grid lg:grid-cols-2 lg:gap-10 w-full lg:h-full lg:mb-0 mb-72">
                 <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 lg:mb-0 mb-2">
                     <div className="lg:w-120 lg:h-120 w-52 h-52 rounded-full waviy border-0 z-20" style={{ backgroundImage: `url(${me})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                     <div className="w-2/5 h-10 bg-black blur-2xl rounded-full z-10"></div>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-2 lg:-ml-20 -ml-0 lg:mb-8 mb-0 w-full">
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 w-full">
                         <h2 className="lg:text-7xl text-4xl font-poppins dark:text-white fade-up-text mb-2 lg:-ml-1" style={{ animationDelay: (screenWidth <= 1080) ? `0.3s` : `0s` }}>ENRIC ARMENGOL</h2>
-                        <p className="font-dmsans dark:text-white fade-up-text lg:w-4/5 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.4s` : `0.1s` }}>
+                        <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.4s` : `0.1s` }}>
                             <Trans
                                 i18nKey="aboutMe.part1"
                                 components={{ 1: <strong /> }}
@@ -117,7 +117,7 @@ function About({ darkMode }) {
                                 }}
                             />
                         </p>
-                        <p className="font-dmsans dark:text-white fade-up-text lg:w-4/5 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.5s` : `0.2s` }}>
+                        <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.5s` : `0.2s` }}>
                             <Trans
                                 i18nKey="aboutMe.part2"
                                 components={{ 1: <strong /> }}
@@ -128,10 +128,10 @@ function About({ darkMode }) {
                                 }}
                             />
                         </p>
-                        <p className="font-dmsans dark:text-white fade-up-text lg:w-4/5 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.6s` : `0.3s` }}>
+                        <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.6s` : `0.3s` }}>
                             {t('aboutMe.part3')}
                         </p>
-                        <p className="font-dmsans dark:text-white fade-up-text lg:w-4/5 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
+                        <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
                             <Trans
                                 i18nKey="aboutMe.part4"
                                 components={{ 1: <strong /> }}
@@ -141,7 +141,7 @@ function About({ darkMode }) {
                             />
                         </p>
                     </div>
-                    <div className="flex lg:flex-row flex-col gap-5 justify-between lg:w-4/5 w-full">
+                    <div className="flex lg:flex-row flex-col gap-5 justify-between lg:w-11/12 w-full">
                         <div id="player" className="mt-4 px-5 py-4 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1.1s` : `0.5s` }}>
                             {randomSong && (
                                 <>
