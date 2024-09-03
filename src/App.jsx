@@ -185,9 +185,6 @@ function App() {
       <div id="content" className='hidden opacity-0 transition h-full w-full duration-500 z-10'>
         <Content darkMode={darkMode} currentTab={currentTab} setCurrentTab={setCurrentTab}/>
       </div>
-      <div className='fixed bottom-0 left-1/2 -translate-x-1/2 bg-black dark:bg-white py-1 px-5 rounded-t-3xl z-10'>
-        <p className='text-white dark:text-black font-dmsans text-sm'>Under construction</p>
-      </div>
     </div>
   );
 }

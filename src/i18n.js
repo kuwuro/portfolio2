@@ -35,16 +35,18 @@ i18next
                     cfgs: "CFGS DAW",
                     onlinevalles: "OnlineVallès · Internship",
                     cfgm: "CFGM SMX",
-                    freelanceText: "Nowadays, I work as a freelance web developer, and I create projects that help me grow and learn new things. I'm always looking for new opportunities to work on, so if you have a project in mind, don't hesitate to contact me.",
+                    freelanceText: "Nowadays, I work as a freelance web developer, and I create projects that help me grow and learn new things. I'm always looking for new opportunities to work on, so if you have a project in mind, don't hesitate to get in touch me.",
                     ideariumText: "Mantained and developed new functions for a proprietary website using WordPress and PHP, while working on small tasks related to marketing and SEO.",
-                    cfgsText: "Deepened my knowledge in web application development, learning new technologies and tools that would set the base for my future projects.",
-                    onlinevallesText: "",
+                    cfgsText: "Gained a deeper insight in web application development, learning new technologies and tools that would set the base for my future projects, along with my goals.",
+                    onlinevallesText: "Helped with several tasks related to web development, along with writing articles and creating content for the websites.",
+                    cfgmText: "Learned the basics of programming, networking and system administration, while also getting a deeper insight in the world of IT and its possibilities.",
                     "aboutMe": {
                         "part1": "I'm a recent graduate of a <1>{{bold1ENG}}</1>, with a solid technical background and a passion for web design and development. I mainly have a focus on <1>{{bold2ENG}}</1>, but my goal is to expand my knowledge to fullstack.",
                         "part2": "I've been making websites since I was 16, and this experience has helped shaping what I enjoy. I've learned that putting <1>{{bold3ENG}}</1> into my projects makes them truly shine, and that's what drives me to improve and thrive in my work.",
                         "part3": "I love cats, retro aesthetics and old internet culture! When I'm not working, I spend most of my time playing videogames, watching movies, going out with friends and investigating new tools to work with, to then include them in my daily workflow.",
                         "part4": "If you want to get in touch with me, feel free to send me an email at: <1>{{email}}</1>."
-                    }
+                    },
+                    tools: "Tools & Technologies",
                 }
             },
             es: {
@@ -76,12 +78,15 @@ i18next
                     freelanceText: "Actualmente trabajo como desarrollador web freelance, y creo proyectos que me ayudan a crecer y aprender cosas nuevas. Siempre estoy buscando nuevas oportunidades en las que trabajar, así que si tienes un proyecto en mente, no dudes en contactarme.",
                     ideariumText: "Mantenía y desarrollaba nuevas funciones para una web propietaria usando WordPress y PHP, mientras trabajaba en pequeñas tareas relacionadas con marketing y SEO.",
                     cfgsText: "Profundicé mis conocimientos en el desarrollo de aplicaciones web, aprendiendo nuevas tecnologías y herramientas que sentarían las bases para mis futuros proyectos.",
+                    onlinevallesText: "Ayudé con varias tareas relacionadas con el desarrollo web, junto con escribir artículos y crear contenido para las webs.",
+                    cfgmText: "Aprendí los conceptos básicos de programación, redes y administración de sistemas, mientras también profundizaba en el mundo de la informática y sus posibilidades.",
                     "aboutMe": {
                         "part1": "Soy recién graduado de <1>{{bold1ESP}}</1>, con una sólida formación técnica y pasión por el diseño y desarrollo web. Principalmente tengo un enfoque en <1>{{bold2ESP}}</1>, pero mi objetivo es expandir mis conocimientos al fullstack.",
                         "part2": "He estado haciendo páginas web desde los 16 años, y esta experiencia ha ayudado a definir lo que disfruto. He aprendido que los <1>{{bold3ESP}}</1> por mis proyectos los hace brillar de verdad, y eso es lo que me impulsa a mejorar y prosperar en mi trabajo.",
                         "part3": "¡Me encantan los gatos, la estética retro y la cultura antigua de internet! Cuando no estoy trabajando, paso la mayor parte de mi tiempo jugando videojuegos, viendo películas, saliendo con amigos e investigando nuevas herramientas con las que trabajar, para luego incluirlas en mi flujo de trabajo diario.",
                         "part4": "Si quieres ponerte en contacto conmigo, no dudes en enviarme un email a: <1>{{email}}</1>."
-                    }
+                    },
+                    tools: "Herramientas y tecnologías",
                 }
             },
             ca: {
@@ -110,16 +115,18 @@ i18next
                     cfgs: "CFGS DAW",
                     onlinevalles: "OnlineVallès · Pràctiques",
                     cfgm: "CFGM SMX",
-                    freelanceText: "Actualment treballo com a desenvolupador web freelance, i creo projectes que em ajuden a créixer i aprendre coses noves. Sempre estic buscant noves oportunitats en les quals treballar, així que si tens un projecte en ment, no dubtis a contactar-me.",
+                    freelanceText: "Actualment treballo com a desenvolupador web freelance, i creo projectes que m'ajuden a créixer i aprendre coses noves. Sempre estic buscant noves oportunitats en les quals treballar, així que si tens un projecte en ment, no dubtis a contactar-me.",
                     ideariumText: "Mantenia i desenvolupava noves funcions per a una web pròpia fent servir WordPress i PHP, mentre treballava en petites tasques relacionades amb màrqueting i SEO.",
                     cfgsText: "Vaig aprofundir els meus coneixements en el desenvolupament d'aplicacions web, aprenent noves tecnologies i eines que marcarien les bases per als meus futurs projectes.",
+                    onlinevallesText: "Vaig ajudar amb diverses tasques relacionades amb el desenvolupament web, juntament amb escriure articles i crear contingut per a les webs.",
+                    cfgmText: "Vaig aprendre els conceptes bàsics de programació, xarxes i administració de sistemes, mentre també aprofundia en el món de la informàtica i les seves possibilitats.",
                     "aboutMe": {
                         "part1": "Sóc recentment graduat d'un <1>{{bold1CAT}}</1>, amb una sòlida formació tècnica i passió pel disseny i desenvolupament web. Principalment tinc un enfocament en <1>{{bold2CAT}}</1>, però el meu objectiu és expandir els meus coneixements al fullstack.",
                         "part2": "He estat fent pàgines web des dels 16 anys, i aquesta experiència m'ha ajudat a definir el que gaudeixo. He après que els <1>{{bold3CAT}}</1> pels meus projectes els fa brillar de veritat, i això és el que em impulsa a millorar i prosperar en la meva feina.",
                         "part3": "M'encanten els gats, l'estètica retro i la cultura antiga d'internet! Quan no estic treballant, passo la major part del meu temps jugant a videojocs, veient pel·lícules, sortint amb amics i investigant noves eines amb les quals treballar, per després incloure-les en el meu flux de treball diari.",
                         "part4": "Si vols posar-te en contacte amb mi, no dubtis a enviar-me un email a: <1>{{email}}</1>."
-                    }
-                    
+                    },
+                    tools: "Eines i tecnologies",                    
                 }
             }
         }
