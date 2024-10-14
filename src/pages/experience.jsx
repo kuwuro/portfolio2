@@ -28,15 +28,27 @@ function Experience({ darkMode }) {
                     <div className="lg:block hidden w-1.5 lg:ml-0.5 h-full rounded-3xl bg-black opacity-90 dark:bg-white extend">
                     </div>
                     <div className="w-full h-full flex flex-col lg:gap-4 gap-6 justify-between">
-                        <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '0s'}}>
-                            <p className="font-dmsans text-sm text-black dark:text-white">{t('freelanceDate')}</p>
-                            <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('freelance')}</h2>
-                            <p className="lg:w-6/12 font-dmsans text-md text-black dark:text-white">{t('freelanceText')}</p>
-                            <div className="flex flex-wrap gap-2 w-full lg:mt-1.5 text-sm font-semibold font-dmsans dark:text-white">     
-                                <p className="bg-black text-white dark:bg-white dark:text-black px-2.5 py-1.5 rounded-3xl">{t('allmentioned')}</p>   
-                                <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Next.js</p>      
-                                <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">TypeScript</p>
-                                <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Python</p>
+                        <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0s'}}>
+                            <div className="w-full h-full flex flex-col lg:gap-0 gap-2">
+                                <p className="font-dmsans text-sm text-black dark:text-white">{t('blingDate')}</p>
+                                <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('bling')}</h2>
+                                <p className="font-dmsans text-md text-black dark:text-white">{t('blingText')}</p>
+                                <div className="flex flex-wrap gap-2 w-full lg:mt-1.5 text-sm font-semibold font-dmsans dark:text-white">    
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">CSS</p> 
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Next.js</p>      
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">TypeScript</p>
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">API RESTful</p>
+                                </div>
+                            </div>
+                            <div className="w-full h-full flex flex-col lg:gap-0 gap-2">
+                                <p className="font-dmsans text-sm text-black dark:text-white">{t('freelanceDate')}</p>
+                                <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('freelance')}</h2>
+                                <p className="font-dmsans text-md text-black dark:text-white">{t('freelanceText')}</p>
+                                <div className="flex flex-wrap gap-2 w-full lg:mt-1.5 text-sm font-semibold font-dmsans dark:text-white">     
+                                    <p className="bg-black text-white dark:bg-white dark:text-black px-2.5 py-1.5 rounded-3xl">{t('allmentioned')}</p>   
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Python</p>
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Rust</p>
+                                </div>
                             </div>
                         </div>
                         <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0.2s'}}>
@@ -70,8 +82,7 @@ function Experience({ darkMode }) {
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Google Analytics</p>
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Marketing</p>
                                 </div>
-                            </div>
-                                                    
+                            </div>                                                    
                         </div>     
                         <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0.6s'}}>
                             <div className="w-full h-full flex flex-col lg:gap-0 gap-2">
