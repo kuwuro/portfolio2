@@ -40,7 +40,7 @@ function Experience({ darkMode }) {
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">API RESTful</p>
                                 </div>
                             </div>
-                            <div className="w-full h-full flex flex-col lg:gap-0 gap-2">
+                            <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full h-full flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '0.2s'}}>
                                 <p className="font-dmsans text-sm text-black dark:text-white">{t('freelanceDate')}</p>
                                 <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('freelance')}</h2>
                                 <p className="font-dmsans text-md text-black dark:text-white">{t('freelanceText')}</p>
@@ -51,7 +51,7 @@ function Experience({ darkMode }) {
                                 </div>
                             </div>
                         </div>
-                        <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0.2s'}}>
+                        <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0.4s'}}>
                             <div className="w-full h-full flex flex-col lg:gap-0 gap-2">
                                 <p className="font-dmsans text-sm text-black dark:text-white">{t('cfgsDate')}</p>
                                 <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('cfgs')}</h2>
@@ -71,7 +71,7 @@ function Experience({ darkMode }) {
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Figma</p>
                                 </div>
                             </div>    
-                            <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full h-full flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '0.4s'}}>
+                            <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full h-full flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '0.6s'}}>
                                 <p className="font-dmsans text-sm text-black dark:text-white">{t('ideariumDate')}</p>
                                 <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('idearium')}</h2>
                                 <p className="font-dmsans text-md text-black dark:text-white">{t('ideariumText')}</p>
@@ -84,7 +84,7 @@ function Experience({ darkMode }) {
                                 </div>
                             </div>                                                    
                         </div>     
-                        <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0.6s'}}>
+                        <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full flex lg:flex-row flex-col lg:gap-12 gap-6`} style={{animationDelay: '0.8s'}}>
                             <div className="w-full h-full flex flex-col lg:gap-0 gap-2">
                                 <p className="font-dmsans text-sm text-black dark:text-white">{t('cfgmDate')}</p>
                                 <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('cfgm')}</h2>
@@ -97,7 +97,7 @@ function Experience({ darkMode }) {
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Networks</p>
                                 </div>
                             </div>
-                            <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full h-full flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '0.8s'}}>
+                            <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full h-full flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '1s'}}>
                                 <p className="font-dmsans text-sm text-black dark:text-white">{t('onlinevallesDate')}</p>
                                 <h2 className="font-dmsans font-bold lg:text-3xl text-2xl text-black dark:text-white">{t('onlinevalles')}</h2>
                                 <p className="font-dmsans text-md text-black dark:text-white">{t('onlinevallesText')}</p>
