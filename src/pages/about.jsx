@@ -163,18 +163,21 @@ function About({ darkMode }) {
                                 ) : (
                                 <Trans
                                     i18nKey="aboutMeKuwuro.part2"
-                                    components={{ 1: <strong /> }}
+                                    components={{ 
+                                        1: <strong />, 
+                                        bold6ENG: <><a href="https://desktop.kuwu.ro">my desktop project!</a></>, 
+                                        bold6ESP: <><a href="https://desktop.kuwu.ro">mi proyecto desktop!</a></>, 
+                                        bold6CAT: <><a href="https://desktop.kuwu.ro">el meu projecte desktop!</a></> 
+                                    }}
                                     values={{
                                         bold3ENG: 'internet corner',
                                         bold3ESP: 'rincón de internet',
                                         bold3CAT: "racó d'internet",
                                         bold4: 'frutiger aero',
                                         bold5: 'Y2K',
-                                        bold6ENG: t('aboutMeKuwuro.part2.bold6ENG', { returnObjects: true }),
-                                        bold6ESP: t('aboutMeKuwuro.part2.bold6ESP', { returnObjects: true }),
-                                        bold6CAT: t('aboutMeKuwuro.part2.bold6CAT', { returnObjects: true })
                                     }}
                                 />
+                                
                             )}
                         </p>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.6s` : `0.3s` }}>
