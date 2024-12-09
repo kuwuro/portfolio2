@@ -41,7 +41,7 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
   if (window.location.hostname === 'enricarmengol.com') {
     document.title = 'Enric Armengol · Web designer';
   } else {
-    document.title = 'kuwuro · Web designer';
+    document.title = 'kuwuro · web designer';
   }
 
   const { t } = useTranslation();
