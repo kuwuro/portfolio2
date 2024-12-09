@@ -9,6 +9,10 @@ import LinkedinDark from '../assets/icons/LinkedinDark.svg';
 import LinkedinLight from '../assets/icons/LinkedinLight.svg';
 import DownloadCVDark from '../assets/icons/CvDark.svg';
 import DownloadCVLight from '../assets/icons/CvLight.svg';
+import TwitterDark from '../assets/icons/TwitterDark.svg';
+import TwitterLight from '../assets/icons/TwitterLight.svg';
+import SteamDark from '../assets/icons/SteamDark.svg';
+import SteamLight from '../assets/icons/SteamLight.svg';
 import cvENG from '../assets/media/cvs/CVEnricArmengolENG.pdf';
 import cvESP from '../assets/media/cvs/CVEnricArmengolESP.pdf';
 import cvCAT from '../assets/media/cvs/CVEnricArmengolCAT.pdf';
@@ -39,7 +43,7 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
 
   useEffect(() => {
     const updateTitle = () => {
-      const titleText = window.location.hostname === 'enricarmengol.com' ? 'ENRIC ARMENGOL' : 'KUWURO';
+      const titleText = window.location.hostname === 'enricarmengol.com' ? 'ENRIC ARMENGOL' : 'kuwuro';
       const screenWidth = window.innerWidth;
 
       if (screenWidth <= 600) {
@@ -137,20 +141,41 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
             <img src={GithubDark} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
           )}
         </a>
-        <a href="https://www.linkedin.com/in/enric-armengol/" target="_blank" rel="noreferrer">
-          {!darkMode ? (
-            <img src={LinkedinLight} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
-          ) : (
-            <img src={LinkedinDark} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
-          )}
-        </a>
-        <button onClick={downloadCV}>
-          {!darkMode ? (
-            <img src={DownloadCVLight} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
-          ) : (
-            <img src={DownloadCVDark} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
-          )}
-        </button>
+        {window.location.hostname === 'enricarmengol.com' ? (
+          <>
+            <a href="https://www.linkedin.com/in/enric-armengol/" target="_blank" rel="noreferrer">
+              {!darkMode ? (
+                <img src={LinkedinLight} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
+              ) : (
+                <img src={LinkedinDark} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
+              )}
+            </a>
+            <button onClick={downloadCV}>
+              {!darkMode ? (
+                <img src={DownloadCVLight} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
+              ) : (
+                <img src={DownloadCVDark} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
+              )}
+            </button>
+          </>
+        ) : (
+          <>
+            <a href="https://twitter.com/kurotekku" target="_blank" rel="noreferrer">
+              {!darkMode ? (
+                <img src={TwitterLight} alt="Twitter" className="w-12 h-12 hover:scale-110 transition duration-200" />
+              ) : (
+                <img src={TwitterDark} alt="Twitter" className="w-12 h-12 hover:scale-110 transition duration-200" />
+              )}
+            </a>
+            <a href="https://steamcommunity.com/id/kurotekku/" target="_blank" rel="noreferrer">
+              {!darkMode ? (
+                <img src={SteamLight} alt="Steam" className="w-12 h-12 hover:scale-110 transition duration-200" />
+              ) : (
+                <img src={SteamDark} alt="Steam" className="w-12 h-12 hover:scale-110 transition duration-200" />
+              )}
+            </a>
+          </>
+        )}
       </div>
       <div id='arrowDown' className='absolute bottom-20 lg:opacity-0 flex flex-col justify-center items-center'>
         <button className='focus:outline-none' onClick={transitionDown}>
