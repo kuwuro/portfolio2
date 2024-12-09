@@ -123,35 +123,78 @@ function About({ darkMode }) {
                             )}
                         </h2>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.4s` : `0.1s` }}>
-                            <Trans
-                                i18nKey="aboutMe.part1"
-                                components={{ 1: <strong /> }}
-                                values={{
-                                    bold1ENG: 'Superior Grade in Web Application Development (DAW)',
-                                    bold1ESP: 'Grado Superior en Desarrollo de Aplicaciones Web (DAW)',
-                                    bold1CAT: "Grau Superior de Desenvolupament d`Aplicacions Web (DAW)",
-                                    bold2ENG: 'design and front-end',
-                                    bold2ESP: 'diseño y front-end',
-                                    bold2CAT: 'disseny i front-end',
-                                }}
-                            />
+                            {window.location.hostname === 'enricarmengol.com' ? (
+                                <Trans
+                                    i18nKey="aboutMe.part1"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold1ENG: 'Superior Grade in Web Application Development (DAW)',
+                                        bold1ESP: 'Grado Superior en Desarrollo de Aplicaciones Web (DAW)',
+                                        bold1CAT: "Grau Superior de Desenvolupament d`Aplicacions Web (DAW)",
+                                        bold2ENG: 'design and front-end',
+                                        bold2ESP: 'diseño y front-end',
+                                        bold2CAT: 'disseny i front-end',
+                                    }}
+                                />
+                                ) : (
+                                <Trans
+                                    i18nKey="aboutMeKuwuro.part1"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold1: 'kuwuro',
+                                        bold2ENG: 'make websites',
+                                        bold2ESP: 'hago páginas web',
+                                        bold2CAT: 'faig pàgines web',
+                                    }}
+                                />
+                            )}
                         </p>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.5s` : `0.2s` }}>
-                            <Trans
-                                i18nKey="aboutMe.part2"
-                                components={{ 1: <strong /> }}
-                                values={{
-                                    bold3ENG: 'care and passion',
-                                    bold3ESP: 'pequeños detalles y la pasión',
-                                    bold3CAT: 'petits detalls i la passió'
-                                }}
-                            />
+                            {window.location.hostname === 'enricarmengol.com' ? (
+                                <Trans
+                                    i18nKey="aboutMe.part2"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold3ENG: 'care and passion',
+                                        bold3ESP: 'pequeños detalles y la pasión',
+                                        bold3CAT: 'petits detalls i la passió'
+                                    }}
+                                />
+                                ) : (
+                                <Trans
+                                    i18nKey="aboutMeKuwuro.part2"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold3ENG: 'internet corner',
+                                        bold3ESP: 'rincón de internet',
+                                        bold3CAT: "racó d'internet",
+                                        bold4: 'frutiger aero',
+                                        bold5: 'Y2K',
+                                        bold6ENG: <a href="https://desktop.kuwu.ro">my desktop project!</a>,
+                                        bold6ESP: <a href="https://desktop.kuwu.ro">mi proyecto desktop!</a>,
+                                        bold6CAT: <a href="https://desktop.kuwu.ro">el meu projecte desktop!</a>
+                                    }}
+                                />
+                            )}
                         </p>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.6s` : `0.3s` }}>
-                            {t('aboutMe.part3')}
+                            {window.location.hostname === 'enricarmengol.com' ? (
+                                t('aboutMe.part3')
+                                ) : (
+                                <Trans
+                                    i18nKey="aboutMeKuwuro.part3"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold7: 'weird media',
+                                        bold8ENG: 'theres beauty in stuff you cant understand!',
+                                        bold8ESP: 'hay belleza en las cosas que no puedes entender!',
+                                        bold8CAT: 'hi ha bellesa en les coses que no pots entendre!'
+                                    }}
+                                />
+                            )}
                         </p>
-                        {window.location.hostname === 'enricarmengol.com' && (
-                            <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
+                        <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
+                            {window.location.hostname === 'enricarmengol.com' ? (
                                 <Trans
                                     i18nKey="aboutMe.part4"
                                     components={{ 1: <strong /> }}
@@ -159,8 +202,17 @@ function About({ darkMode }) {
                                         email: 'armengolgarciaenric@gmail.com'
                                     }}
                                 />
-                            </p>
-                        )}
+                                ) : (
+                                <Trans
+                                    i18nKey="aboutMeKuwuro.part4"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold9: '@kurotekku'
+                                    }}
+                                />
+                            )}
+                            
+                        </p>
                     </div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-between lg:w-11/12 w-full">
                         <div id="player" className="mt-4 px-5 py-4 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1.1s` : `0.5s` }}>
