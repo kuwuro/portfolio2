@@ -66,6 +66,8 @@ function Menu({ darkMode, setScrollActive }) {
         }, 800);
     }
 
+    const currentUrl = window.location.hostname;
+
     return (
         <div className="flex items-center justify-center relative">
             <button onClick={goHome}>
@@ -75,23 +77,25 @@ function Menu({ darkMode, setScrollActive }) {
                     <img src={HomeIconDark} alt="Home" className="w-9 h-9 hover:scale-110 transition duration-200" />
                 )}
             </button>   
-            {screenWidth >= 600 ? (
-                <button onClick={cvDownload} className="absolute border-black dark:border-white w-48 left-16 border-2 rounded-3xl py-2 hover:scale-105 transition duration-200 flex justify-center items-center gap-2">
-                    <p className="font-dmsans font-bold text-md dark:text-white text-black">{t('downloadCV')}</p>
-                    {!darkMode ? (
-                        <img src={DownloadCVLight} alt="Download CV" className="w-7 h-7" />
-                    ) : (
-                        <img src={DownloadCVDark} alt="Download CV" className="w-7 h-7" />
-                    )}
-                </button>
-            ) : (
-                <button id="downloadCV" onClick={cvDownload} className="absolute left-16 w-20 hover:scale-105 transition duration-200">
-                    {!darkMode ? (
-                        <img src={CVLight} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
-                    ) : (
-                        <img src={CVDark} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
-                    )}
-                </button>
+            {currentUrl === 'enricarmengol.com' && (
+                screenWidth >= 600 ? (
+                    <button onClick={cvDownload} className="absolute border-black dark:border-white w-48 left-16 border-2 rounded-3xl py-2 hover:scale-105 transition duration-200 flex justify-center items-center gap-2">
+                        <p className="font-dmsans font-bold text-md dark:text-white text-black">{t('downloadCV')}</p>
+                        {!darkMode ? (
+                            <img src={DownloadCVLight} alt="Download CV" className="w-7 h-7" />
+                        ) : (
+                            <img src={DownloadCVDark} alt="Download CV" className="w-7 h-7" />
+                        )}
+                    </button>
+                ) : (
+                    <button id="downloadCV" onClick={cvDownload} className="absolute left-16 w-20 hover:scale-105 transition duration-200">
+                        {!darkMode ? (
+                            <img src={CVLight} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
+                        ) : (
+                            <img src={CVDark} alt="Download CV" className="w-9 h-9 hover:scale-110 transition duration-200" />
+                        )}
+                    </button>
+                )
             )}
         </div>
     );

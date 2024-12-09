@@ -162,7 +162,7 @@ body * {
   }
 }
 
-#enricAr span {
+#introTitle span {
   position: relative;
   display: inline-block;
   animation-delay: calc(.1s * var(--i));    

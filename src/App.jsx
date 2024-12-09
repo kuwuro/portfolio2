@@ -121,7 +121,7 @@ function App() {
       body.addEventListener('click', function (e) {
         createClickRipple(e.clientX, e.clientY, false);
       });     
-      document.querySelectorAll('#enricAr span').forEach((span, index) => {
+      document.querySelectorAll('#introTitle span').forEach((span, index) => {
         span.style.animation = `waviy 3.5s ease-in-out infinite ${index * 0.1}s`;
       });  
       document.getElementById('arrowDown').classList.remove('lg:hidden');

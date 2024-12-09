@@ -38,6 +38,12 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
       }
   }, [scrollActive]);
 
+  if (window.location.hostname === 'enricarmengol.com') {
+    document.title = 'Enric Armengol · Web designer';
+  } else {
+    document.title = 'kuwuro · Web designer';
+  }
+
   const { t } = useTranslation();
   const [titleHtml, setTitleHtml] = useState('');
 
@@ -112,21 +118,10 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
     }, 700);
   }
 
-  function throttle(func, delay) {
-    let lastTime = 0;
-    return function (...args) {
-      const now = new Date().getTime();
-      if (now - lastTime >= delay) {
-        func.apply(this, args);
-        lastTime = now;
-      }
-    };
-  }
-
   return (
     <div id="title" className="text-center flex flex-col justify-center items-center gap-5">
       <div className='flex flex-col gap-2'>
-        <h1 id='enricAr'
+        <h1 id='introTitle'
           className="lg:text-7xl text-5xl font-poppins select-none tracking-widest dark:text-white"
           style={{ whiteSpace: 'pre' }}
           dangerouslySetInnerHTML={{ __html: titleHtml }}

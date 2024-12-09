@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import me from "../assets/media/me.jpg";
+import kuwuro from "../assets/media/kuwuro.png";
 import cover1 from "../assets/media/covers/ancient.png";
 import cover2 from "../assets/media/covers/beginagain.png";
 import cover3 from "../assets/media/covers/fridayiminlove.png";
@@ -16,6 +17,10 @@ import GithubDark from '../assets/icons/GithubDark.svg';
 import GithubLight from '../assets/icons/GithubLight.svg';
 import LinkedinDark from '../assets/icons/LinkedinDark.svg';
 import LinkedinLight from '../assets/icons/LinkedinLight.svg';
+import TwitterDark from '../assets/icons/TwitterDark.svg';
+import TwitterLight from '../assets/icons/TwitterLight.svg';
+import SteamDark from '../assets/icons/SteamDark.svg';
+import SteamLight from '../assets/icons/SteamLight.svg';
 import DownloadCVDark from '../assets/icons/CvDark.svg';
 import DownloadCVLight from '../assets/icons/CvLight.svg';
 import { Trans, useTranslation } from "react-i18next";
@@ -88,6 +93,14 @@ function About({ darkMode }) {
     const { t } = useTranslation();
 
     const [randomSong, setRandomSong] = useState(null);
+    var image = null;
+
+    if (window.location.hostname === 'enricarmengol.com') {
+        image = me;
+    } else {
+        image = kuwuro;
+    }
+
 
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * songs.length);
@@ -97,12 +110,18 @@ function About({ darkMode }) {
         <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start overflow-auto" style={{ height: `${screenWidth < 1080 ? '100vh' : '85vh'}` }}>
             <div className="grid lg:grid-cols-2 lg:gap-10 w-full lg:h-full lg:mb-0 mb-72">
                 <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 lg:mb-0 mb-2">
-                    <div className="lg:w-120 lg:h-120 w-52 h-52 rounded-full waviy border-0 z-20" style={{ backgroundImage: `url(${me})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                    <div className="lg:w-120 lg:h-120 w-52 h-52 rounded-full waviy border-0 z-20" style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                     <div className="w-2/5 h-10 bg-black blur-2xl rounded-full z-10"></div>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-2 lg:-ml-20 -ml-0 lg:mb-8 mb-0 w-full">
                     <div className="flex flex-col gap-2 w-full">
-                        <h2 className="lg:text-7xl text-4xl font-poppins dark:text-white fade-up-text mb-2 lg:-ml-1" style={{ animationDelay: (screenWidth <= 1080) ? `0.3s` : `0s` }}>ENRIC ARMENGOL</h2>
+                        <h2 className="lg:text-7xl text-4xl font-poppins dark:text-white fade-up-text mb-2 lg:-ml-1" style={{ animationDelay: (screenWidth <= 1080) ? `0.3s` : `0s` }}>
+                            {window.location.hostname === 'enricarmengol.com' ? (
+                                'ENRIC ARMENGOL'
+                                ) : (
+                                'KUWURO'
+                            )}
+                        </h2>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.4s` : `0.1s` }}>
                             <Trans
                                 i18nKey="aboutMe.part1"
@@ -131,15 +150,17 @@ function About({ darkMode }) {
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.6s` : `0.3s` }}>
                             {t('aboutMe.part3')}
                         </p>
-                        <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
-                            <Trans
-                                i18nKey="aboutMe.part4"
-                                components={{ 1: <strong /> }}
-                                values={{
-                                    email: 'armengolgarciaenric@gmail.com'
-                                }}
-                            />
-                        </p>
+                        {window.location.hostname === 'enricarmengol.com' && (
+                            <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
+                                <Trans
+                                    i18nKey="aboutMe.part4"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        email: 'armengolgarciaenric@gmail.com'
+                                    }}
+                                />
+                            </p>
+                        )}
                     </div>
                     <div className="flex lg:flex-row flex-col gap-5 justify-between lg:w-11/12 w-full">
                         <div id="player" className="mt-4 px-5 py-4 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1.1s` : `0.5s` }}>
@@ -157,27 +178,48 @@ function About({ darkMode }) {
                             )}
                         </div>
                         <div className="flex gap-6 justify-center items-center mt-4 fade-up-text order-first lg:order-last" style={{ animationDelay: (screenWidth <= 1080) ? `0.8s` : `0.6s` }}>
-                            <a href="https://github.com/kuwuro" target="_blank" rel="noreferrer" className="fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `0.9s` : `0.7s` }}>
-                                {!darkMode ? (
-                                    <img src={GithubLight} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
-                                ) : (
-                                    <img src={GithubDark} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
-                                )}
+                        <a href="https://github.com/kuwuro" target="_blank" rel="noreferrer">
+                            {!darkMode ? (
+                                <img src={GithubLight} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
+                            ) : (
+                                <img src={GithubDark} alt="Github" className="w-12 h-12 hover:scale-110 transition duration-200" />
+                            )}
                             </a>
-                            <a href="https://www.linkedin.com/in/enric-armengol/" target="_blank" rel="noreferrer" className="fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1s` : `0.8s` }}>
+                            {window.location.hostname === 'enricarmengol.com' ? (
+                            <>
+                                <a href="https://www.linkedin.com/in/enric-armengol/" target="_blank" rel="noreferrer">
                                 {!darkMode ? (
                                     <img src={LinkedinLight} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
                                 ) : (
                                     <img src={LinkedinDark} alt="Linkedin" className="w-12 h-12 hover:scale-110 transition duration-200" />
                                 )}
-                            </a>
-                            <button onClick={downloadCV} className="fade-up-text" style={{ animationDelay: (screenWidth <= 1080) ? `1.1s` : `0.9s` }}>
+                                </a>
+                                <button onClick={downloadCV}>
                                 {!darkMode ? (
                                     <img src={DownloadCVLight} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
                                 ) : (
                                     <img src={DownloadCVDark} alt="Download CV" className="w-11 h-11 hover:scale-110 transition duration-200" />
                                 )}
-                            </button>
+                                </button>
+                            </>
+                            ) : (
+                            <>
+                                <a href="https://twitter.com/kurotekku" target="_blank" rel="noreferrer">
+                                {!darkMode ? (
+                                    <img src={TwitterLight} alt="Twitter" className="w-12 h-12 hover:scale-110 transition duration-200" />
+                                ) : (
+                                    <img src={TwitterDark} alt="Twitter" className="w-12 h-12 hover:scale-110 transition duration-200" />
+                                )}
+                                </a>
+                                <a href="https://steamcommunity.com/id/kurotekku/" target="_blank" rel="noreferrer">
+                                {!darkMode ? (
+                                    <img src={SteamLight} alt="Steam" className="w-12 h-12 hover:scale-110 transition duration-200" />
+                                ) : (
+                                    <img src={SteamDark} alt="Steam" className="w-12 h-12 hover:scale-110 transition duration-200" />
+                                )}
+                                </a>
+                            </>
+                            )}
                         </div>
                     </div>
                 </div>
