@@ -163,7 +163,7 @@ function About({ darkMode }) {
                                 ) : (
                                 <Trans
                                     i18nKey="aboutMeKuwuro.part2"
-                                    components={{ 1: <strong />, 2: <a href="https://desktop.kuwu.ro"/> }}
+                                    components={{ 1: <strong />, 2: <a className="font-bold underline" href="https://desktop.kuwu.ro" target="_blank" rel="noreferrer" /> }}
                                     values={{
                                         bold3ENG: 'internet corner',
                                         bold3ESP: 'rincón de internet',
