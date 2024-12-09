@@ -126,7 +126,7 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
   return (
     <div id="title" className="text-center flex flex-col justify-center items-center gap-5">
       <div className='flex flex-col gap-2'>
-        <h1
+        <h1 id='enricAr'
           className="lg:text-7xl text-5xl font-poppins select-none tracking-widest dark:text-white"
           style={{ whiteSpace: 'pre' }}
           dangerouslySetInnerHTML={{ __html: titleHtml }}
