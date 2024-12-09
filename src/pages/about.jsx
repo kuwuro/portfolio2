@@ -170,9 +170,9 @@ function About({ darkMode }) {
                                         bold3CAT: "racó d'internet",
                                         bold4: 'frutiger aero',
                                         bold5: 'Y2K',
-                                        bold6ENG: <a href="https://desktop.kuwu.ro">my desktop project!</a>,
-                                        bold6ESP: <a href="https://desktop.kuwu.ro">mi proyecto desktop!</a>,
-                                        bold6CAT: <a href="https://desktop.kuwu.ro">el meu projecte desktop!</a>
+                                        bold6ENG: t('aboutMeKuwuro.part2.bold6ENG', { returnObjects: true }),
+                                        bold6ESP: t('aboutMeKuwuro.part2.bold6ESP', { returnObjects: true }),
+                                        bold6CAT: t('aboutMeKuwuro.part2.bold6CAT', { returnObjects: true })
                                     }}
                                 />
                             )}

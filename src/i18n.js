@@ -50,7 +50,7 @@ i18next
                         "part4": "If you want to get in touch with me, feel free to send me an email at: <1>{{email}}</1>."
                     },
                     "aboutMeKuwuro": {
-                        "part1": "hi! im <1>{{bold1ENG}}</1>, and i <1>{{bold2ENG}}</1>. its always been sort of a creative outlet for me.",
+                        "part1": "hi! im <1>{{bold1}}</1>, and i <1>{{bold2ENG}}</1>. its always been sort of a creative outlet for me.",
                         "part2": "this site is made with bits of my professional portfolio, but i plan on having a proper <1>{{bold3ENG}}</1> for myself eventually. im super into <1>{{bold4}}</1> and <1>{{bold5}}</1>, so its gonna be something along those lines (you can check out <1>{{bold6ENG}}</1>).",
                         "part3": "i looove <1>{{bold7}}</1>, be it videogames or movies, those kinda things that make you question what you just saw? yea. the ones that make close to no sense and leave you with more questions than answers? those too. <1>{{bold8ENG}}</1>",
                         "part4": "if you have any recommendations or just wanna poke and say hello, my discord's <1>{{bold9}}</1> and you also have my twitter down here. i dont bite :]"
@@ -99,7 +99,7 @@ i18next
                         "part4": "Si quieres ponerte en contacto conmigo, no dudes en enviarme un email a: <1>{{email}}</1>."
                     },
                     "aboutMeKuwuro": {
-                        "part1": "hola! soy <1>{{bold1ESP}}</1>, y <1>{{bold2ESP}}</1>. siempre ha sido una especie de salida creativa para mí.",
+                        "part1": "hola! soy <1>{{bold1}}</1>, y <1>{{bold2ESP}}</1>. siempre ha sido una especie de salida creativa para mí.",
                         "part2": "este sitio está hecho con partes de mi portfolio profesional, pero planeo tener un <1>{{bold3ESP}}</1> propio eventualmente. me mola el estilo <1>{{bold4}}</1> y <1>{{bold5}}</1>, así que va a ser algo por ese estilo (puedes echarle un vistazo a <1>{{bold6ESP}}</1>).",
                         "part3": 'me encanta el "<1>{{bold7}}</1>", ya sean videojuegos o películas, esas cosas que te hacen cuestionar lo que acabas de ver? sí. las que no tienen sentido y te dejan con más preguntas que respuestas? también. <1>{{bold8ESP}}</1>',
                         "part4": "si tienes alguna recomendación o solo quieres saludar, mi discord es <1>{{bold9}}</1> y también tienes mi twitter aquí abajo. no muerdo :]"
@@ -148,7 +148,7 @@ i18next
                         "part4": "Si vols posar-te en contacte amb mi, no dubtis a enviar-me un email a: <1>{{email}}</1>."
                     },
                     "aboutMeKuwuro": {
-                        "part1": "hola! sóc <1>{{bold1CAT}}</1>, i <1>{{bold2CAT}}</1>. sempre ha estat una mena de sortida creativa per a mi.",
+                        "part1": "hola! sóc <1>{{bold1}}</1>, i <1>{{bold2CAT}}</1>. sempre ha estat una mena de sortida creativa per a mi.",
                         "part2": "aquest lloc està fet amb parts del meu portfolio professional, però planejo tenir un <1>{{bold3CAT}}</1> propi eventualment. em mola l'estil <1>{{bold4}}</1> i <1>{{bold5}}</1>, així que serà alguna cosa per aquest estil (pots veure <1>{{bold6CAT}}</1>).",
                         "part3": 'm\'encanta el "<1>{{bold7}}</1>", ja siguin videojocs o pel·lícules, aquestes coses que et fan qüestionar el que acabes de veure? sí. les que no tenen sentit i et deixen amb més preguntes que respostes? també. <1>{{bold8CAT}}</1>',
                         "part4": "si tens alguna recomanació o només vols saludar, el meu discord és <1>{{bold9}}</1> i també tens el meu twitter aquí baix. no mossego :]"
