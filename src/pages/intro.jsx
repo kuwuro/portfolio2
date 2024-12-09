@@ -39,7 +39,7 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
 
   useEffect(() => {
     const updateTitle = () => {
-      const titleText = 'ENRIC ARMENGOL';
+      const titleText = window.location.hostname === 'enricarmengol.com' ? 'ENRIC ARMENGOL' : 'KUWURO';
       const screenWidth = window.innerWidth;
 
       if (screenWidth <= 600) {
@@ -122,7 +122,7 @@ function Intro({ darkMode, setCurrentTab, scrollActive, setScrollActive }) {
   return (
     <div id="title" className="text-center flex flex-col justify-center items-center gap-5">
       <div className='flex flex-col gap-2'>
-        <h1 id='enricAr'
+        <h1
           className="lg:text-7xl text-5xl font-poppins select-none tracking-widest dark:text-white"
           style={{ whiteSpace: 'pre' }}
           dangerouslySetInnerHTML={{ __html: titleHtml }}
