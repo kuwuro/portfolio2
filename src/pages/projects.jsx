@@ -42,7 +42,7 @@ const projects = [
         description: 'desktopfolioDescription',
         coverPC: desktopfolioPC,
         coverMobile: desktopfolioMobile,
-        link: 'https://desktop.enricarmengol.com',
+        link: window.location.hostname === 'enricarmengol.com' ? 'https://desktop.enricarmengol.com' : 'https://desktop.kuwu.ro',
         tech: ['HTML', 'CSS', 'JavaScript'],
         github: 'https://github.com/kuwuro/portfolioDesktop'
     },

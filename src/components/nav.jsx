@@ -7,7 +7,7 @@ function Nav({ currentTab, setCurrentTab }) {
     useEffect(() => {
         setCurrentTab(currentTab);
     }, [currentTab, setCurrentTab]);
-    
+
     return (
         <nav>
             <ul id="nav" className="flex backdrop-blur-xl items-center justify-center font-dmsans font-bold gap-2 text-md rounded-3xl dark:text-white text-black">
@@ -20,7 +20,7 @@ function Nav({ currentTab, setCurrentTab }) {
                         <button>{t('projectsTitle')}</button>
                     </li>
                 )}
-                {currentTab === "experience" ? (
+                {window.location.hostname === "enricarmengol.com" && (currentTab === "experience" ? (
                     <li className="bg-white50 dark:bg-white20 py-2.5 px-4 rounded-3xl transition duration-300">
                         <button className="cursor-default">{t('experienceTitle')}</button>
                     </li>
@@ -28,7 +28,7 @@ function Nav({ currentTab, setCurrentTab }) {
                     <li onClick={() => setCurrentTab("experience")} className="cursor-pointer bg-transparent py-2.5 px-4 hover:bg-white30 hover:dark:bg-white10 rounded-3xl transition duration-300">
                         <button>{t('experienceTitle')}</button>
                     </li>
-                )}
+                ))}
                 {currentTab === "about" ? (
                     <li className="bg-white50 dark:bg-white20 py-2.5 px-4 rounded-3xl transition duration-300">
                         <button className="cursor-default"><nobr>{t('aboutTitle')}</nobr></button>

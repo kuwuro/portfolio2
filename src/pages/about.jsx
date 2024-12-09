@@ -119,7 +119,7 @@ function About({ darkMode }) {
                             {window.location.hostname === 'enricarmengol.com' ? (
                                 'ENRIC ARMENGOL'
                                 ) : (
-                                'KUWURO'
+                                'kuwuro'
                             )}
                         </h2>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.4s` : `0.1s` }}>
