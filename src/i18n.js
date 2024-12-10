@@ -51,8 +51,8 @@ i18next
                     },
                     "aboutMeKuwuro": {
                         "part1": "hi! im <1>{{bold1}}</1>, and i <1>{{bold2ENG}}</1>. its always been sort of a creative outlet for me.",
-                        "part2": "this site is just recycling my professional portfolio, but i plan on having a proper <1>{{bold3ENG}}</1> for myself eventually. im super into <1>{{bold4}}</1> and <1>{{bold5}}</1>, so its gonna be something along those lines (you can check out <2>{{bold6ENG}}</2>).",
-                        "part3": "i looove <1>{{bold7}}</1>, be it videogames or movies, those kinda things that make you question what you just saw? yea. the ones that make close to no sense and leave you with more questions than answers? those too. <1>{{bold8ENG}}</1>",
+                        "part2": "this site is just recycling my professional portfolio, but i plan on having a proper <1>{{bold3ENG}}</1> for myself eventually, to keep my experiments. im super into <1>{{bold4}}</1> and <1>{{bold5}}</1>, so its gonna be something along those lines (you can check out <2>{{bold6ENG}}</2>).",
+                        "part3": "been making websites since i was 16, tapped into <1>{{bold7ENG}}</1> through it and never looked back. i also love videogames as a medium, and its what i spend most of my free time on, along with some movies and series. <1>{{bold8ENG}}</1>",
                         "part4": "if you have any recommendations or just wanna poke and say hello, my discord's <1>{{bold9}}</1> and you also have my twitter down here. i dont bite :]"
                     },
                     tools: "Tools & Technologies",
@@ -100,8 +100,8 @@ i18next
                     },
                     "aboutMeKuwuro": {
                         "part1": "hola! soy <1>{{bold1}}</1>, y <1>{{bold2ESP}}</1>. siempre ha sido una especie de salida creativa para mí.",
-                        "part2": "este sitio está reciclando partes de mi portfolio profesional, pero planeo tener un <1>{{bold3ESP}}</1> propio eventualmente. me mola el estilo <1>{{bold4}}</1> y <1>{{bold5}}</1>, así que va a ser algo por ese estilo (puedes echarle un vistazo a <2>{{bold6ESP}}</2>).",
-                        "part3": 'me encanta el "<1>{{bold7}}</1>", ya sean videojuegos o películas, esas cosas que te hacen cuestionar lo que acabas de ver? sí. las que no tienen sentido y te dejan con más preguntas que respuestas? también. <1>{{bold8ESP}}</1>',
+                        "part2": "este sitio está reciclando partes de mi portfolio profesional, pero planeo tener un <1>{{bold3ESP}}</1> propio en algun momento. me mola el estilo <1>{{bold4}}</1> y <1>{{bold5}}</1>, así que va a ser algo por ese estilo (puedes echarle un vistazo a <2>{{bold6ESP}}</2>).",
+                        "part3": 'he estado haciendo páginas web desde los 16 años, he tocado <1>{{bold7ESP}}</1> a través de ello y nunca he mirado atrás. también me encantan los videojuegos como medio, y es en lo que paso la mayor parte de mi tiempo libre, junto con algunas películas y series. <1>{{bold8ESP}}</1>',
                         "part4": "si tienes alguna recomendación o solo quieres saludar, mi discord es <1>{{bold9}}</1> y también tienes mi twitter aquí abajo. no muerdo :]"
                     },
                     tools: "Herramientas y tecnologías",
@@ -149,8 +149,8 @@ i18next
                     },
                     "aboutMeKuwuro": {
                         "part1": "hola! sóc <1>{{bold1}}</1>, i <1>{{bold2CAT}}</1>. sempre ha estat una mena de sortida creativa per a mi.",
-                        "part2": "aquest lloc està reciclant amb parts del meu portfolio professional, però planejo tenir un <1>{{bold3CAT}}</1> propi eventualment. em mola l'estil <1>{{bold4}}</1> i <1>{{bold5}}</1>, així que serà alguna cosa per aquest estil (pots fer-li un cop d'ull a <2>{{bold6CAT}}</2>).",
-                        "part3": 'm\'encanta el "<1>{{bold7}}</1>", ja siguin videojocs o pel·lícules, aquestes coses que et fan qüestionar el que acabes de veure? sí. les que no tenen sentit i et deixen amb més preguntes que respostes? també. <1>{{bold8CAT}}</1>',
+                        "part2": "aquest lloc està reciclant parts del meu portfolio professional, però planejo tenir un <1>{{bold3CAT}}</1> propi eventualment. em mola l'estil <1>{{bold4}}</1> i <1>{{bold5}}</1>, així que serà alguna cosa per aquest estil (pots fer-li un cop d'ull a <2>{{bold6CAT}}</2>).",
+                        "part3": 'he estat fent pàgines web des dels 16 anys, he tocat <1>{{bold7CAT}}</1> a través d\'això i mai he mirat enrere. també m\'encanten els videojocs com a mitjà, i és en el que passo la major part del meu temps lliure, juntament amb algunes pel·lícules i sèries. <1>{{bold8CAT}}</1>',
                         "part4": "si tens alguna recomanació o només vols saludar, el meu discord és <1>{{bold9}}</1> i també tens el meu twitter aquí baix. no mossego :]"
                     },
                     tools: "Eines i tecnologies",                    

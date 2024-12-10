@@ -167,7 +167,7 @@ function About({ darkMode }) {
                                     values={{
                                         bold3ENG: 'internet corner',
                                         bold3ESP: 'rincón de internet',
-                                        bold3CAT: "racó d`internet",
+                                        bold3CAT: "racó d\'internet",
                                         bold4: 'frutiger aero',
                                         bold5: 'Y2K',
                                         bold6ENG: 'my desktop project!',
@@ -181,17 +181,18 @@ function About({ darkMode }) {
                             {window.location.hostname === 'enricarmengol.com' ? (
                                 t('aboutMe.part3')
                                 ) : (
-                                // <Trans
-                                //     i18nKey="aboutMeKuwuro.part3"
-                                //     components={{ 1: <strong /> }}
-                                //     values={{
-                                //         bold7: 'weird media',
-                                //         bold8ENG: 'theres beauty in stuff you cant understand!',
-                                //         bold8ESP: 'hay belleza en las cosas que no puedes entender!',
-                                //         bold8CAT: 'hi ha bellesa en les coses que no pots entendre!'
-                                //     }}
-                                // />
-                                null
+                                <Trans
+                                    i18nKey="aboutMeKuwuro.part3"
+                                    components={{ 1: <strong /> }}
+                                    values={{
+                                        bold7ENG: 'design and code',
+                                        bold7ESP: 'diseño y código',
+                                        bold7CAT: 'disseny i codi',
+                                        bold8ENG: 'inspiration\'s gotta come from somewhere, right? ;p',
+                                        bold8ESP: 'la inspiración tiene que venir de algún sitio, no? ;p',
+                                        bold8CAT: 'la inspiració ha de venir d`alguna banda, no? ;p'
+                                    }}
+                                />
                             )}
                         </p>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
