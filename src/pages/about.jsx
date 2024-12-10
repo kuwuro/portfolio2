@@ -181,16 +181,17 @@ function About({ darkMode }) {
                             {window.location.hostname === 'enricarmengol.com' ? (
                                 t('aboutMe.part3')
                                 ) : (
-                                <Trans
-                                    i18nKey="aboutMeKuwuro.part3"
-                                    components={{ 1: <strong /> }}
-                                    values={{
-                                        bold7: 'weird media',
-                                        bold8ENG: 'theres beauty in stuff you cant understand!',
-                                        bold8ESP: 'hay belleza en las cosas que no puedes entender!',
-                                        bold8CAT: 'hi ha bellesa en les coses que no pots entendre!'
-                                    }}
-                                />
+                                // <Trans
+                                //     i18nKey="aboutMeKuwuro.part3"
+                                //     components={{ 1: <strong /> }}
+                                //     values={{
+                                //         bold7: 'weird media',
+                                //         bold8ENG: 'theres beauty in stuff you cant understand!',
+                                //         bold8ESP: 'hay belleza en las cosas que no puedes entender!',
+                                //         bold8CAT: 'hi ha bellesa en les coses que no pots entendre!'
+                                //     }}
+                                // />
+                                null
                             )}
                         </p>
                         <p className="font-dmsans dark:text-white fade-up-text lg:w-11/12 w-full" style={{ animationDelay: (screenWidth <= 1080) ? `0.7s` : `0.4s` }}>
