@@ -51,7 +51,7 @@ i18next
                     },
                     "aboutMeKuwuro": {
                         "part1": "hi! im <1>{{bold1}}</1>, and i <1>{{bold2ENG}}</1>. its always been sort of a creative outlet for me.",
-                        "part2": "this site is just recycling my professional portfolio, but i plan on having a proper <1>{{bold3ENG}}</1> for myself eventually, to keep my experiments. im super into <1>{{bold4}}</1> and <1>{{bold5}}</1>, so its gonna be something along those lines (you can check out <2>{{bold6ENG}}</2>).",
+                        "part2": "this site is just recycling my professional portfolio, but i plan on having a proper <1>{{bold3ENG}}</1> for myself eventually, to keep my silly things in. im super into <1>{{bold4}}</1> and <1>{{bold5}}</1>, so its gonna be something along those lines (you can check out <2>{{bold6ENG}}</2>).",
                         "part3": "been making websites since i was 16, tapped into <1>{{bold7ENG}}</1> through it and never looked back. i also love videogames as a medium, and its what i spend most of my free time on, along with some movies and series. <1>{{bold8ENG}}</1>",
                         "part4": "if you have any recommendations or just wanna poke and say hello, my discord's <1>{{bold9}}</1> and you also have my twitter down here. i dont bite :]"
                     },

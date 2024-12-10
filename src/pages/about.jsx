@@ -167,7 +167,7 @@ function About({ darkMode }) {
                                     values={{
                                         bold3ENG: 'internet corner',
                                         bold3ESP: 'rincón de internet',
-                                        bold3CAT: "racó d\'internet",
+                                        bold3CAT: "racó d`internet",
                                         bold4: 'frutiger aero',
                                         bold5: 'Y2K',
                                         bold6ENG: 'my desktop project!',
@@ -188,7 +188,7 @@ function About({ darkMode }) {
                                         bold7ENG: 'design and code',
                                         bold7ESP: 'diseño y código',
                                         bold7CAT: 'disseny i codi',
-                                        bold8ENG: 'inspiration\'s gotta come from somewhere, right? ;p',
+                                        bold8ENG: 'inspiration`s gotta come from somewhere, right? ;p',
                                         bold8ESP: 'la inspiración tiene que venir de algún sitio, no? ;p',
                                         bold8CAT: 'la inspiració ha de venir d`alguna banda, no? ;p'
                                     }}
