@@ -188,7 +188,7 @@ function About({ darkMode }) {
                                         bold7ENG: 'design and code',
                                         bold7ESP: 'diseño y código',
                                         bold7CAT: 'disseny i codi',
-                                        bold8ENG: 'inspiration`s gotta come from somewhere, right? ;p',
+                                        bold8ENG: 'inspiration has gotta come from somewhere, right? ;p',
                                         bold8ESP: 'la inspiración tiene que venir de algún sitio, no? ;p',
                                         bold8CAT: 'la inspiració ha de venir d`alguna banda, no? ;p'
                                     }}
