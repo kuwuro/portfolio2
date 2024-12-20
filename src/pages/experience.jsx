@@ -38,6 +38,7 @@ function Experience({ darkMode }) {
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Next.js</p>      
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">TypeScript</p>
                                     <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">API RESTful</p>
+                                    <p className="bg-white50 dark:bg-white20 px-2.5 py-1.5 rounded-3xl">Django</p>
                                 </div>
                             </div>
                             <div className={`${screenWidth < 1080 ? 'fade-up-text' : 'fade-right'} w-full h-full flex flex-col lg:gap-0 gap-2`} style={{animationDelay: '0.2s'}}>
