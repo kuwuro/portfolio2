@@ -36,6 +36,10 @@ body {
   height: 100%;
   color: var(--text);
   overflow: hidden;
+  background: linear-gradient(45deg, var(--bg1), var(--bg2)),
+              radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.8) 10%, transparent 60%),
+              radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.6) 10%, transparent 70%);
+  background-size: 300% 300%;
 }
 
 ::-webkit-scrollbar { display: none; }
