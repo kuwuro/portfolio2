@@ -48,7 +48,6 @@ body {
 body * {
   @apply transition-colors duration-300;
   @apply transition-opacity duration-300;
-  @apply transition-all duration-300;
 }
 
 .background-layer {
