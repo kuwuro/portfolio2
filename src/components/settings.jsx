@@ -35,11 +35,13 @@ function Settings({ darkModeHandler, darkMode }) {
         const languages = document.getElementById('languages');
         const downloadButton = document.getElementById('downloadCV');
         if (languages.classList.contains('hidden')) {
-            if (screenWidth <= 600) {
-                downloadButton.classList.add('opacity-0');
-                setTimeout(() => {
-                    downloadButton.classList.add('hidden');
-                }, 200);
+            if (window.location.hostname === 'enricarmengol.com') {
+                if (screenWidth <= 600) {
+                    downloadButton.classList.add('opacity-0');
+                    setTimeout(() => {
+                        downloadButton.classList.add('hidden');
+                    }, 200);
+                }
             }
             languages.classList.remove('hidden');
             setTimeout(() => {
@@ -47,11 +49,13 @@ function Settings({ darkModeHandler, darkMode }) {
                 languages.classList.add('opacity-100');
             }, 50);
         } else {
-            if (screenWidth <= 600) {
-                downloadButton.classList.remove('hidden');
-                setTimeout(() => {
-                    downloadButton.classList.remove('opacity-0');
-                }, 100);
+            if (window.location.hostname === 'enricarmengol.com') {
+                if (screenWidth <= 600) {
+                    downloadButton.classList.remove('hidden');
+                    setTimeout(() => {
+                        downloadButton.classList.remove('opacity-0');
+                    }, 100);
+                }
             }
             languages.classList.remove('opacity-100');
             setTimeout(() => {
