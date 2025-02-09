@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import me from "../assets/media/me.jpg";
 import kuwuro from "../assets/media/kuwuro.png";
+import typh from "../assets/media/typh.png";
 import cover1 from "../assets/media/covers/ancient.png";
 import cover2 from "../assets/media/covers/beginagain.png";
 import cover3 from "../assets/media/covers/fridayiminlove.png";
@@ -11,6 +12,10 @@ import cover7 from "../assets/media/covers/bite.png";
 import cover8 from "../assets/media/covers/crimeofpassion.png";
 import cover9 from "../assets/media/covers/pictures.png";
 import cover10 from "../assets/media/covers/dontbesoserious.png";
+import cover11 from "../assets/media/covers/riptide.png";
+import cover12 from "../assets/media/covers/lazycat.png";
+import cover13 from "../assets/media/covers/ilefttheparty.png";
+import cover14 from "../assets/media/covers/inabakumori.png";
 import spotifyDark from "../assets/icons/SpotifyDark.svg";
 import spotifyLight from "../assets/icons/SpotifyLight.svg";
 import GithubDark from '../assets/icons/GithubDark.svg';
@@ -85,6 +90,26 @@ const songs = [
         title: 'Don\'t Be so Serious',
         artist: 'Low Roar',
         cover: cover10
+    },
+    {
+        title: 'Riptide',
+        artist: 'Vance Joy',
+        cover: cover11
+    },
+    {
+        title: 'Lazy Cat',
+        artist: 'Eve',
+        cover: cover12
+    },
+    {
+        title: 'I Left the Party',
+        artist: 'Rival Consoles',
+        cover: cover13
+    },
+    {
+        title: '私は雨',
+        artist: 'Inabakumori',
+        cover: cover14
     }
 ];
 
@@ -106,6 +131,7 @@ function About({ darkMode }) {
         const randomIndex = Math.floor(Math.random() * songs.length);
         setRandomSong(songs[randomIndex]);
     }, []);
+
     return (
         <div className="lg:mx-12 mx-8 lg:my-36 my-24 flex flex-col lg:gap-8 gap-4 justify-start items-start overflow-auto" style={{ height: `${screenWidth < 1080 ? '100vh' : '85vh'}` }}>
             <div className="grid lg:grid-cols-2 lg:gap-10 w-full lg:h-full lg:mb-0 mb-72">
