@@ -282,8 +282,14 @@ function About({ darkMode }) {
           <div className='flex lg:flex-row flex-col gap-5 justify-between lg:w-11/12 w-full'>
             <div
               id='player'
-              className='mt-4 px-5 py-4 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text'
+              className='mt-4 px-5 py-4 bg-black20 dark:bg-white10 rounded-xl flex items-center fade-up-text cursor-pointer hover:dark:bg-white20 hover:bg-black30 transition duration-200'
               style={{ animationDelay: screenWidth <= 1080 ? `1.1s` : `0.5s` }}
+              onClick={() => {
+                window.open(
+                  "https://open.spotify.com/user/enricthemaster?si=566714934f7947a4",
+                  "_blank"
+                );
+              }}
             >
               {randomSong && (
                 <>
