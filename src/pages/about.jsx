@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import me from "../assets/media/me.jpg";
+import me from "../assets/media/me2.jpg";
 import kuwuro from "../assets/media/kuwuro.png";
 import typh from "../assets/media/typh.png";
 import cover1 from "../assets/media/covers/ancient.png";
